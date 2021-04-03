@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style/w3.css">
+<link rel="stylesheet" href="style/button.css">
 <link rel='stylesheet' href='style/font.css'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -28,8 +29,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         </div>
         <div class="w3-container">
           <h2>Kuan Wei Tseng</h2>
-          <p>Research Associate, Joint Research Center for AI Technology and All Vista Healthcare, National Taiwan University</p>
-          <p>Taipei, Taiwan</p>
+          <h4>Research Associate</h4>
+          <p>Image and Vision Lab (imLab),<br>
+             Department of Computer Science and Information Engineering, National Taiwan University</p>
+          <p><i class="fa fa-location-arrow fa-fw w3-margin-right w3-large w3-text-teal"></i>Taipei, Taiwan</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>kwtseng@ntu.edu.tw</p>
           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>(+886)-978-086-761</p>
           <hr>
@@ -82,22 +85,30 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>National Taiwan University</b></h5>
+          <h6 class="w3-text-teal">Bachelor of Science in Engineering, Department of Mechanical Engineering</h6>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2016 - Jun 2020</h6>
-          <p>Bachelor of Science in Engineering, Department of Mechanical Engineering</p>
+          <ul style="PADDING-LEFT: 1.25em">
+            <li>Undergraduate Research Supervisor: Dr. Yi-Ping Hung (Dept. of Computer Science)</li>
+            <li>Research Topics: Visual SLAM, Visual Inertial Fusion, Augmented Reality</li>
+          </ul>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>University of Oxford (July 2017- August 2017)</b></h5>
+          <h5 class="w3-opacity"><b>University of Oxford</b></h5>
+          <h6 class="w3-text-teal">Advanced Humanity and English Language Programme</h6>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2017 - Aug 2017</h6>
-          <p>Advanced Humanity and English Language Program</p>
+          <p> The programme includes 20 hours of lessons a week and personal works, covering topics such as British culture,
+              academic writing, creative writing, job seeking skills, debating skills, presentation workshops, and so on.</p>
+          
           <hr>
         </div>
+
       </div>      
 
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Research Associate</b></h5>
+          <h5 class="w3-opacity"><b>Research Associate <br>Research Assistant (Formerly)</b></h5>
           <h6 class="w3-text-teal">Department of Computer Science & Information Engineering, National Taiwan University</h6>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2019 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
      
@@ -138,6 +149,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <h5 class="w3-opacity"><b>Camera Ego-Positioning Using Sensor Fusion and Complementary Method.</b></h5>
           <h6 class="w3-text-teal"> Peng-Yuan Kao, <b>Kuan-Wei Tseng</b>, Tian-Yi Shen, Yan-Bin Song, <br>Kuan-Wen Chen, Shih- Wei Hu, Sheng-Wen Shih, and Yi-Ping Hung</h6>
           <h6 class="w3-text-teal"><i>Pattern Recognition. ICPR International Workshops and Challenges, 2021.</i></h6>
+          <a href="documents/kao2021camera.pdf"><button class="button button5">PDF</button></a>
+          <a href="https://youtu.be/hkse_ES144c"><button class="button button5">Video</button></a>
+          <a href="https://link.springer.com/chapter/10.1007/978-3-030-68796-0_21"><button class="button button5">Publication</button></a>
           <hr>
         </div>
 
@@ -160,9 +174,18 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <i class="fa fa-pinterest-p w3-hover-opacity"></i>
   <i class="fa fa-twitter w3-hover-opacity"></i>
   <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
 </footer>
 
 </body>
 </html>
 
+
+<!-- @inproceedings{kao2021camera,
+  title={Camera Ego-Positioning Using Sensor Fusion and Complementary Method},
+  author={Kao, Peng-Yuan and Tseng, Kuan-Wei and Shen, Tian-Yi and Song, Yan-Bin and Chen, Kuan-Wen and Hu, Shih-Wei and Shih, Sheng-Wen and Hung, Yi-Ping},
+  booktitle={Pattern Recognition. ICPR International Workshops and Challenges: Virtual Event, January 10--15, 2021, Proceedings, Part III},
+  pages={291--304},
+  year={2021},
+  organization={Springer International Publishing}
+} -->
