@@ -51,32 +51,26 @@ body {font-size:16px;}
   
   <!-- <div class="w3-container w3-light-grey" style="padding:12px"></div> -->
 
-  <h1 class="w3-center w3-white w3-margin w3-text-grey" style="padding:12px"><b>About Me</b></h1>
+  <h1 class="w3-center w3-white w3-margin w3-text-grey" style="padding:12px"><b>Selected Coursework</b></h1>
 
-  <!-- Education --> 
-  <div class="w3-container w3-card w3-white w3-margin" id = education>
-    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-    <div class="w3-container">
-      <h5 class="w3-opacity"><b>National Taiwan University</b></h5>
-      <h6 class="w3-opacity">Bachelor of Science in Engineering, Department of Mechanical Engineering</h6>
-      <h6 class="w3-opacity"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2016 - Jun 2020</h6>
-      <ul style="PADDING-LEFT: 1.25em">
-        <li>Undergraduate Research Supervisor: Dr. Yi-Ping Hung (Dept. of Computer Science)</li>
-        <li>Research Topics: Visual SLAM, Visual Inertial Fusion, Augmented Reality</li>
-      </ul>
-      <hr>
-    </div>
-    <div class="w3-container">
-      <h5 class="w3-opacity"><b>University of Oxford</b></h5>
-      <h6 class="w3-opacity">Advanced Humanity and English Language Programme</h6>
-      <h6 class="w3-opacity"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2017 - Aug 2017</h6>
-      <p> The programme includes 20 hours of lessons a week and personal works, covering topics such as British culture,
-          academic writing, creative writing, job seeking skills, debating skills, presentation workshops, and so on.</p>
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/DIP_final.png" alt="DIP_final" style="width:100%">
       
-      <hr>
+      <div class="w3-container w3-white" style="padding-top:10px;">
+        <h4><b>License Plate Detection and Recognition</b></h4>
+        <p>We propose an intelligent license plate detection and recognition system which supports illuminance-invariant license plates detection and optical character recognition (OCR). The input image is sent to the detection module, where we apply cross power spectrum to find the top-k candidate patches that are similar with pre-computed template, which is a set of eigenvectors extracted from numerous license plate. Next, we reject outliers by physical constraint of Taiwanese license plate and perform OCR by similarity estimation with training data to recognize the license plate numbers.</p>
+      </div>
     </div>
-
-  </div> 
+    <div class="w3-half w3-container w3-margin-bottom">
+      <img src="/w3images/lights.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- Work Experience --> 
   <div class="w3-container w3-card w3-white w3-margin" id=work>
