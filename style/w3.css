@@ -91,7 +91,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-dropdown-hover.w3-mobile,.w3-dropdown-hover.w3-mobile .w3-btn,.w3-dropdown-hover.w3-mobile .w3-button,.w3-dropdown-click.w3-mobile,.w3-dropdown-click.w3-mobile .w3-btn,.w3-dropdown-click.w3-mobile .w3-button{width:100%}}
 @media (max-width:768px){.w3-modal-content{width:500px}.w3-modal{padding-top:50px}}
 @media (min-width:993px){.w3-modal-content{width:900px}.w3-hide-large{display:none!important}.w3-sidebar.w3-collapse{display:block!important}}
-@media (max-width:992px) and (min-width:601px){.w3-hide-medium{display:none!important}}
+@media (max-width:1000px) and (min-width:601px){.w3-hide-medium{display:none!important}}
 @media (max-width:992px){.w3-sidebar.w3-collapse{display:none}.w3-main{margin-left:0!important;margin-right:0!important}.w3-auto{max-width:100%}}
 .w3-top,.w3-bottom{position:fixed;width:100%;z-index:1}.w3-top{top:0}.w3-bottom{bottom:0}
 .w3-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
@@ -179,6 +179,14 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-pale-green,.w3-hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
 .w3-pale-yellow,.w3-hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
 .w3-pale-blue,.w3-hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
+.kwt-alice-blue,.kwt-hover-alice-blue:hover{color:#000!important;background-color:#EDF6F9!important}
+.kwt-ming,.kwt-hover-Ming:hover{color:#000!important;background-color:#006D77!important}
+.kwt-middle-blue-green,.kwt-hover-middle-blue-greem:hover{color:#000!important;background-color: #83C5BE!important;}
+.kwt-photo-dark,.kwt-hover-photo-dark:hover{color:#000!important;background-color:#121E37!important}
+.kwt-text-dark-salmon,.kwt-hover-text-dark-salmon:hover{color:#E29578!important}
+.kwt-text-alice-blue,.kwt-hover-text-alice-blue:hover{color:#EDF6F9 !important}
+.kwt-text-ming,.kwt-hover-text-ming:hover{color:#006D77 !important}
+.kwt-text-silk,.kwt-hover-text-silk:hover{color:#FFDDD2 !important}
 .w3-text-amber,.w3-hover-text-amber:hover{color:#ffc107!important}
 .w3-text-aqua,.w3-hover-text-aqua:hover{color:#00ffff!important}
 .w3-text-blue,.w3-hover-text-blue:hover{color:#2196F3!important}
@@ -202,6 +210,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-text-yellow,.w3-hover-text-yellow:hover{color:#d2be0e!important}
 .w3-text-white,.w3-hover-text-white:hover{color:#fff!important}
 .w3-text-black,.w3-hover-text-black:hover{color:#000!important}
+
 .w3-text-grey,.w3-hover-text-grey:hover,.w3-text-gray,.w3-hover-text-gray:hover{color:#757575!important}
 .w3-text-light-grey,.w3-hover-text-light-grey:hover,.w3-text-light-gray,.w3-hover-text-light-gray:hover{color:#f1f1f1!important}
 .w3-text-dark-grey,.w3-hover-text-dark-grey:hover,.w3-text-dark-gray,.w3-hover-text-dark-gray:hover{color:#3a3a3a!important}
