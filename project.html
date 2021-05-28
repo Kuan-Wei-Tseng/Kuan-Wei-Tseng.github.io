@@ -143,10 +143,23 @@ body, html {
               <p style="text-align:justify;">We propose Deep3D Stabilizer, a novel 3D depth-based learning method for video stabilization. We take advantage of the recent self-supervised framework on jointly learning depth and camera ego-motion estimation on raw videos. To the best of our knowledge, our proposed Deep3D Stabilizer is the first learning method that handles the stabilization process with learned 3D information.</p>
             
               <div class="w3-col l8 m8 s12">
-                <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+                <p><button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+
+                <div id="id01" class="w3-modal w3-animate-opacity">
+                  <div class="w3-modal-content w3-card-4">
+                    <header class="w3-container w3-blue"> 
+                      <h3>Deep3D: 3D VIDEO STABILIZATION WITH DEEP LEARNING</h3>
+                    </header>
+                    <div class="w3-container">
+                    <p style="text-align:justify;">Video stabilization is an essential component of visual quality enhancement. Early methods rely on feature tracking to recover either 2D or 3D frame motion, which suffer from the robustness of local feature extraction and tracking in shaky videos. Recently, learning-based methods seek to find frame transformations with high-level information via deep neural networks to overcome the robustness issue of feature tracking. Nevertheless, to our best knowledge, no learning-based methods leverage 3D cues for the transformation inference yet; hence they would lead to artifacts on complex scene-depth scenarios. In this paper, we propose Deep3D Stabilizer, a novel 3D depth-based learning method for video stabilization. We take advantage of the recent self-supervised framework on jointly learning depth and camera ego-motion estimation on raw videos. Our approach requires no data for pre-training but stabilizes the input video via 3D reconstruction directly. The rectification stage incorporates the 3D scene depth and camera motion to smooth the camera trajectory and synthesize the stabilized video. Unlike most one-size-fits-all learning-based methods, our smoothing algorithm allows users to manipulate the stability of a video efficiently. Experimental results on challenging benchmarks show that the proposed solution consistently outperforms the state-of-the-art methods on almost all motion categories.</p>
+                    </div>
+                    <div class="w3-container w3-light-grey w3-padding">
+                      <button class="w3-button w3-right w3-white w3-border" 
+                      onclick="document.getElementById('id01').style.display='none'">Close</button>
+                    </div>
+                  </div>
+                </div>
               </div>
-
-
           </div>          
       
       </div>
