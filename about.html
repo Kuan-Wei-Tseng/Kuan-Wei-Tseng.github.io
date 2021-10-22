@@ -5,16 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style/w3.css">
 <link rel="stylesheet" href="style/button.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,900;1,400&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style/style.css">
 
 <style>
-body, h1,h2,h3,h4,h5,h6 {font-family: 'Source Sans Pro', sans-serif}
+body, h1,h2,h3,h4,h5,h6 {font-family: 'Dancing Script', sans-serif;}
 
 body, html {
   height: 100%;
@@ -101,13 +97,14 @@ body, html {
       <div class="timeline">
         <div class="entry education">
           <div class="title">
-            <h3>2016 - 2020</h3>
-            <p>Degree Program</p>
+            <h3 class="w3-hide-small">2016 - 2020</h3>
+            <p  class="w3-hide-small">Degree Program</p>
           </div>
           <div class="body edubody">
             <img src="images/ntu_logo.png" style="padding-right:5px; height:60px">
-            <p><span style="font-weight: 600;">Bachelor of Science in Engineering</span></p>
+            <p style="font-weight: 600;">Bachelor of Science in Engineering</p>
             <p>Department of Mechanical Engineering, National Taiwan University (NTU)</p>
+            <p class="w3-hide-medium w3-hide-large">2016 - 2020</p>
             <!-- , <br> Department of Mechanical Engineering</p> -->
             <ul>
               <li>Joined Image and Vision Lab (imLab), directed by Dr. Yi-Ping Hung at the Dept. of Computer Science as a research student since 2018. (See Research Experience)</li>
@@ -118,15 +115,16 @@ body, html {
         </div>
         <div class="entry education">
           <div class="title">
-            <h3>Summer 2017</h3>
-            <p>Exchange Student</p>
+            <h3 class="w3-hide-small">Summer 2017</h3>
+            <p class="w3-hide-small">Exchange Student</p>
           </div>
           <div class="body edubody">
             <img src="images/Oxford.png" style="padding-right:5px; height:60px">
             <p><span style="font-weight: 600;">Advanced Humanity and English Language Programme</span></p>
             <p>Hertford College, University of Oxford</p>
-            <!-- , <br> Department of Mechanical Engineering</p> -->
+            <p class="w3-hide-medium w3-hide-large">Summer 2017</p>
             <ul>
+              <li>Study abroad as an Exchange Student from National Taiwan University.</li>
               <li>Comprehensive academic English program covering topics such as academic and creative writing, debating, British culture, job seeking skills, etc.</li>
             </ul>
           </div>
@@ -139,65 +137,66 @@ body, html {
   <div class="w3-container w3-card w3-white w3-margin" id = work>
     <h2 class="w3-padding-16 kwt-text-dark-salmon" style="line-height:1;font-weight:600;"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xlarge kwt-text-dark-salmon"></i>Research Experience</h2>
 
-    <div class="timeline">
-      <div class="entry">
-        <div class="title">
-          <h3>Feb 2021 - Present</h3>
-          <p>Research Experience</p>
+    <div class="w3-container w3-row-padding">
+      <div class="timeline">
+        <div class="entry">
+          <div class="title">
+            <h3 class="w3-hide-small">Feb 2021 - Present</h3>
+            <p  class="w3-hide-small">Research Experience</p>
+          </div>
+          <div class="body">
+            <p>Research Associate</p>
+            <p>AI Applications and Integration Lab (AI^2 Lab) <br> Department of Computer Science and Information Engineering <br> National Taiwan University</p>
+            <ul>
+              <li>Developed dynamic frame-rate and real-time object pose estimation and tracking using visual-inertial fusion for mobile devices with low computational power. </li>
+              <li>Developing image optimization-based online neural style transfer algorithm for virtual reality and 3D display with stereoscopic and temporal view consistency constraints. </li>
+            </ul>
+            <p> Supervisor: Prof. Chu-Song Chen, Prof. Yi-Ping Hung</p>
+          </div>
         </div>
-        <div class="body">
-          <p>Research Associate</p>
-          <p>AI Applications and Integration Lab (AI^2 Lab) <br> Department of Computer Science and Information Engineering <br> National Taiwan University</p>
-          <ul>
-            <li>Developed dynamic frame-rate and real-time object pose estimation and tracking using visual-inertial fusion for mobile devices with low computational power. </li>
-            <li>Developing image optimization-based online neural style transfer algorithm for virtual reality and 3D display with stereoscopic and temporal view consistency constraints. </li>
-          </ul>
-          <p> Supervisor: Prof. Chu-Song Chen, Prof. Yi-Ping Hung</p>
+        <div class="entry">
+          <div class="title">
+            <h3 class="w3-hide-small">Aug 2020 - Feb 2021</h3>
+            <p  class="w3-hide-small">Research Experience</p>
+          </div>
+          <div class="body">
+            <p >Research Assistant</p>
+            <p>Image and Vision Lab (imLab) <br> Department of Computer Science and Information Engineering <br> National Taiwan University</p>
+            <ul>
+              <li>Developed the first learning-based video stabilization algorithms that utilized 3D computer vision to model and smooth camera motion for offline algorithm. </li>
+              <li>Developed a precise and versatile olfactory display system that exhausts scented gases via subwoofers to enhance immersive Virtual Reality experience. </li>
+            </ul>
+            <p> Supervisor: Prof. Yi-Ping Hung</p>
+          </div>
         </div>
-      </div>
-      <div class="entry">
-        <div class="title">
-          <h3>Aug 2020 - Feb 2021</h3>
-          <p>Research Experience</p>
-        </div>
-        <div class="body">
-          <p>Research Assistant</p>
-          <p>Image and Vision Lab (imLab) <br> Department of Computer Science and Information Engineering <br> National Taiwan University</p>
-          <ul>
-            <li>Developed the first learning-based video stabilization algorithms that utilized 3D computer vision to model and smooth camera motion for offline algorithm. </li>
-            <li>Developed a precise and versatile olfactory display system that exhausts scented gases via subwoofers to enhance immersive Virtual Reality experience. </li>
-          </ul>
-          <p> Supervisor: Prof. Yi-Ping Hung</p>
-        </div>
-      </div>
-    
-      <div class="entry">
-        <div class="title">
-          <h3>June 2020</h3>
-          <p>Event</p>
-        </div>
-        <div class="body">
-          <p>Received a Bachelor of Science in Engineering degree from National Taiwan University </p>
-        </div>
-      </div>  
-    
-      <div class="entry">
-        <div class="title">
-          <h3>2019 - 2020</h3>
-          <p>Research Experience</p>
-        </div>
-        <div class="body">
-          <p>Undergraduate Research Assistant</p>
-          <p>Image and Vision Lab (imLab) <br> Department of Computer Science and Information Engineering <br> National Taiwan University</p>
-          <ul>
-            <li>Explored practical applications of optical see-through head-mounted display and designed a Augmented Tai-Chi-Chuan Practicing Tool with 3D pose evaluation. </li>
-            <li>Conducted analysis on loosely and tightly-coupled visual-inertial fusion methods and their applications to localization and mapping at extreme cases. </li>
-          </ul>
-          <p> Supervisor: Prof. Yi-Ping Hung</p>
+      
+        <div class="entry">
+          <div class="title">
+            <h3 class="w3-hide-small">June 2020</h3>
+            <p class="w3-hide-small">Event</p>
+          </div>
+          <div class="body">
+            <p>Received a Bachelor of Science in Engineering degree from National Taiwan University </p>
+          </div>
+        </div>  
+      
+        <div class="entry">
+          <div class="title">
+            <h3 class="w3-hide-small">2019 - 2020</h3>
+            <p  class="w3-hide-small">Research Experience</p>
+          </div>
+          <div class="body">
+            <p>Undergraduate Research Assistant</p>
+            <p>Image and Vision Lab (imLab) <br> Department of Computer Science and Information Engineering <br> National Taiwan University</p>
+            <ul>
+              <li>Explored practical applications of optical see-through head-mounted display and designed a Augmented Tai-Chi-Chuan Practicing Tool with 3D pose evaluation. </li>
+              <li>Conducted analysis on loosely and tightly-coupled visual-inertial fusion methods and their applications to localization and mapping at extreme cases. </li>
+            </ul>
+            <p> Supervisor: Prof. Yi-Ping Hung</p>
+          </div>
         </div>
       </div>
     </div>
-
     <!-- <div class="w3-container w3-row-padding">
 
       <div class="w3-col w3-left" style="width:400px;">

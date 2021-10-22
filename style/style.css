@@ -74,7 +74,7 @@
 .entry .body p:first-child {
   margin-top: 3px;
   font-weight: 600;
-  font-size: 140%;
+  /* font-size: 140%; */
 }
 
 .entry .edubody p {
@@ -98,6 +98,46 @@
   content: "–";
   margin-right: .5em;
 } */
+
+@media screen and (max-width: 600px){
+  .timeline {
+    padding: 20px 0px 20px 50px;
+  }
+  .timeline:before {
+    left: 10px;
+  }  
+  .entry .title {
+    width: 0%;
+    padding-right:0px;
+    text-align: left;
+  }
+  .entry .title:before { 
+    left: -46px;
+    top: 18px;
+  }
+
+  .entry .body {
+    float: none;
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .entry .body p {
+    margin-bottom: 5px;
+    line-height:1.4em;
+    font-weight: 400;
+    font-size: 120%;
+  }
+  .entry .body ul {
+    /* color: #aaa; */
+    font-weight: 400;
+    font-size: 100%;
+    text-align: left;
+    line-height: 1.6em;
+    /* list-style-type: none; */
+  }/*
+}
+
 
 .publication h4 {
   font-weight: 600;
