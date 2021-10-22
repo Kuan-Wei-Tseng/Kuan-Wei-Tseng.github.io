@@ -101,7 +101,7 @@
 
 @media screen and (max-width: 600px){
   .timeline {
-    padding: 20px 0px 20px 50px;
+    padding: 20px 0px 20px 0px;
   }
   .timeline:before {
     left: 10px;
@@ -112,14 +112,14 @@
     text-align: left;
   }
   .entry .title:before { 
-    left: -46px;
+    left: 4px;
     top: 18px;
   }
 
   .entry .body {
     float: none;
     width: 100%;
-    padding-left: 0px;
+    padding-left: 40px;
   }
 
   .entry .body p {
