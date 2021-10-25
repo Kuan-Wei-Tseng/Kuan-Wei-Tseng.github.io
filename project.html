@@ -58,7 +58,7 @@ body, html {
 
 
 <!-- Main Body-->
-<div class="w3-main" id="home" style="margin-left:140px;">
+<div class="w3-main" id="home" style="margin-left:140px; max-width:1600px;">
 
     <div class="w3-container" style="padding-top:12px"></div>
 
@@ -128,21 +128,44 @@ body, html {
     <!-- Blog entries -->
     <div class="w3-row custom-flex">
 
+      <div class="w3-card w3-container w3-col l12 mh s12 w3-margin w3-white kwt-text-ming">
+          
+        <div class="w3-col l3 w3-container w3-white w3-padding-32">
+            <img src="images/VIOPose.gif" alt="Nature" style="width:100%;">
+        </div>
+        
+        <div class="w3-hide-small" style="padding-top:20px;"></div>
+
+        <div class="w3-col l9 w3-container w3-white kwt-text-ming">
+            <h4 style="line-height:1.5;"><b>Visual-Inertial Fusion for Object Pose Tracking</b></h4>
+            <h6 class="kwt-text-dark-salmon" style="line-height:1;">Sensor Fusion, 3D Computer Vision, Robotics</h6>              
+            <p style="text-align:justify;">Object pose estimation and tracking is to find the relative 6DoF transformation, including translation and rotation, between the object and the camera. We present a visual-inertial fusion framework for object pose estimation and tracking which supports flexible framerate and is able to perform in real-time on mobile devices.</p>
+
+            <a href="https://www.youtube.com/watch?v=_7lHXKA6r0I"><button class="button button6"><i class="fa fa-youtube-play fa-fw" style="padding-top:6px;"></i>&ensp; Demo</button></a>
+          
+            <!-- <div class="w3-col l7 m7 s12">
+              <a href="https://dl.acm.org/doi/10.1145/3474085.3475678"><button class="button button6"><i class="fa fa-external-link fa-fw" style="padding-top:6px;"></i>&ensp; Publication</button></a>
+            </div> -->
+        </div>          
+    
+    </div>
+
       <!-- Blog entry -->
       <div class="w3-card w3-container w3-col l12 mh s12 w3-margin w3-white kwt-text-ming">
           
-          <div class="w3-col l4 w3-container w3-white w3-padding-32">
-              <img src="images/3ddvs.jpg" alt="Nature" style="width:100%;">
+          <div class="w3-col l3 w3-container w3-white w3-padding-32">
+              <img src="images/Deep3D.gif" alt="Nature" style="width:100%;">
           </div>
           
           <div class="w3-hide-small" style="padding-top:20px;"></div>
 
-          <div class="w3-col l8 w3-container w3-white kwt-text-ming">
+          <div class="w3-col l9 w3-container w3-white kwt-text-ming">
               <h4 style="line-height:1.5;"><b>Deep3D: 3D VIDEO STABILIZATION WITH DEEP LEARNING</b></h4>
-              <h6 class="kwt-text-dark-salmon" style="line-height:1;">Research Project (CVPR 2021)</h6>              
-              <p style="text-align:justify;">We propose Deep3D Stabilizer, a novel 3D depth-based learning method for video stabilization. We take advantage of the recent self-supervised framework on jointly learning depth and camera ego-motion estimation on raw videos. To the best of our knowledge, our proposed Deep3D Stabilizer is the first learning method that handles the stabilization process with learned 3D information.</p>
-            
-              <div class="w3-col l8 m8 s12">
+              <h6 class="kwt-text-dark-salmon" style="line-height:1;">3D Computer Vision, Deep Learning, Image Processing</h6>              
+              <p style="text-align:justify;">3D Video Stabilization aims to remove shakey and jittery contents from videoes using estimated 3D information. We propose Deep3D Stabilizer, a novel 3D depth-based learning method for video stabilization, which took advantage of the self-supervised framework on jointly learning depth and camera ego-motion estimation.</p>
+              <a href="https://www.youtube.com/watch?v=pMluFVA7NDQ"><button class="button button6"><i class="fa fa-youtube-play fa-fw" style="padding-top:6px;"></i>&ensp; Demo</button></a>
+
+              <!-- <div class="w3-col l8 m8 s12">
                 <p><button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
 
                 <div id="id01" class="w3-modal w3-animate-opacity">
@@ -159,7 +182,7 @@ body, html {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
           </div>          
       
       </div>
@@ -167,20 +190,18 @@ body, html {
       <!-- Blog entry -->
       <div class="w3-card w3-container w3-col l12 mh s12 w3-margin w3-white kwt-text-ming">
           
-        <div class="w3-col l4 w3-container w3-white w3-padding-32">
+        <div class="w3-col l3 w3-container w3-white w3-padding-32">
             <img src="images/vrsmell.jpg" style="width:100%;">
         </div>
         
         <div class="w3-hide-small" style="padding-top:20px;"></div>
 
-        <div class="w3-col l8 w3-container w3-white kwt-text-ming">
+        <div class="w3-col l9 w3-container w3-white kwt-text-ming">
             <h4 style="line-height:1.5;"><b>aBiO: ACTIVE Bi-OLFACTORY DISPLAY FOR VR</b></h4>
-            <h6 class="kwt-text-dark-salmon" style="line-height:1;">Research Project (ACMMM 2021)</h6>              
-            <p style="text-align:justify;">We present aBio, an active bi-olfactory display system that delivers scents precisely to specific locations rather than diffusing scented air into the atmosphere. aBio provides users with a natural olfactory experience in free air by colliding two vortex rings launched from dual speaker-based vortex generators, which also has the effect of cushioning the force of air impact. </p>
+            <h6 class="kwt-text-dark-salmon" style="line-height:1;">Human Computer Interaction, Virtual Reality</h6>              
+            <p style="text-align:justify;">Including olfactory cues in virtual reality (VR) would enhance user immersion in the virtual environment. We present an active bi-olfactory display system that delivers scents precisely to specific locations. aBio provides users with a natural olfactory experience in free air by colliding two vortex rings launched from dual speaker-based vortex generators.</p>
           
-            <div class="w3-col l8 m8 s12">
-              <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-            </div>
+            <button class="w3-opacity button button6"><i class="fa fa-youtube-play fa-fw" style="padding-top:6px;"></i>&ensp; Demo</button>
 
 
         </div>          
@@ -190,20 +211,18 @@ body, html {
       <!-- Blog entry -->
       <div class="w3-card w3-container w3-col l12 mh s12 w3-margin w3-white kwt-text-ming">
           
-        <div class="w3-col l4 w3-container w3-white w3-padding-32">
+        <div class="w3-col l3 w3-container w3-white w3-padding-32">
             <img src="images/pixstab.jpg" style="width:100%;">
         </div>
         
         <div class="w3-hide-small" style="padding-top:20px;"></div>
 
-        <div class="w3-col l8 w3-container w3-white kwt-text-ming">
+        <div class="w3-col l9 w3-container w3-white kwt-text-ming">
             <h4 style="line-height:1.5;"><b>PixStabNet: FAST DEEP ONLINE VIDEO STABILIZATION</b></h4>
-            <h6 class="kwt-text-dark-salmon" style="line-height:1;">Research Project (ICIP 2021)</h6>              
+            <h6 class="kwt-text-dark-salmon" style="line-height:1;">Computer Vision, Deep Learning, Image Processing</h6>              
             <p style="text-align:justify;"> We propose a multi-scale convolutional neural network (PixStabNet) which stabilizes each unstable frame in real time without using future frames. We estimate a pixel-based warping map to transform each pixel for more precise modelling. Also, we propose well-designed loss functions along with a two-stage training scheme to enhance network robustness. </p>
           
-            <div class="w3-col l8 m8 s12">
-              <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-            </div>
+            <button class="w3-opacity button button6"><i class="fa fa-youtube-play fa-fw" style="padding-top:6px;"></i>&ensp; Demo</button>
 
 
         </div>          
@@ -213,20 +232,18 @@ body, html {
       <!-- Blog entry -->
       <div class="w3-card w3-container w3-col l12 mh s12 w3-margin w3-white kwt-text-ming">
           
-        <div class="w3-col l4 w3-container w3-white w3-padding-32">
+        <div class="w3-col l3 w3-container w3-white w3-padding-32">
             <img src="images/TaiChi.jpg" style="width:100%;">
         </div>
         
         <div class="w3-hide-small" style="padding-top:20px;"></div>
 
-        <div class="w3-col l8 w3-container w3-white kwt-text-ming">
+        <div class="w3-col l9 w3-container w3-white kwt-text-ming">
             <h4 style="line-height:1.5;"><b>AUGMENTED TAI-CHI CHUAN PRACTICE TOOL</b></h4>
             <h6 class="kwt-text-dark-salmon" style="line-height:1;">Research Project (MIPR 2021)</h6>              
-            <p style="text-align:justify;"> We propose an augmented reality Tai Chi Chuan (TCC) practice tool with pose evaluation to help people practice TCC on their own. The tool consists of an optical see-through head-mounted display, external cameras, digital compasses, and a server. Users learn TCC movements from surrounding virtual coaches in AR and determine whether their postures are correct via an evaluation module.</p>
+            <p style="text-align:justify;"> We propose an augmented reality Tai Chi Chuan (TCC) practice tool with pose evaluation to help people practice TCC on their own. The tool consists of an optical see-through head-mounted display, external cameras, digital compasses, and a server. Users learn TCC movements from virtual coaches in AR and check their postures with pose evaluation module.</p>
           
-            <div class="w3-col l8 m8 s12">
-              <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-            </div>
+            <button class="w3-opacity button button6"><i class="fa fa-youtube-play fa-fw" style="padding-top:6px;"></i>&ensp; Demo</button>
 
 
         </div>          
