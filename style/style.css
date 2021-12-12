@@ -93,6 +93,9 @@
     padding-right: 32px;
     padding-left: 32px;
   }
+  .smallscreen{
+    text-align: center;
+  }
   .timeline {
     padding: 20px 0px 20px 0px;
   }
