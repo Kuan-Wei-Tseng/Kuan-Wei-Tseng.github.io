@@ -55,6 +55,7 @@
   background-color: transparent;
   border-radius: 5px;
   cursor: pointer;
+  margin-bottom: 3px;
 }
 
 .button7:hover {

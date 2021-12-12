@@ -82,6 +82,13 @@
 }
 
 @media screen and (max-width: 600px) {
+  .about{
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .about h5{
+    font-size: 100%;
+  }
   .timeline {
     padding: 20px 0px 20px 0px;
   }
