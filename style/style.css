@@ -89,6 +89,10 @@
   .about h5{
     font-size: 100%;
   }
+  .smallscreen{
+    padding-right: 32px;
+    padding-left: 32px;
+  }
   .timeline {
     padding: 20px 0px 20px 0px;
   }
