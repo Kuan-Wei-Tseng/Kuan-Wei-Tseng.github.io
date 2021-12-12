@@ -61,3 +61,13 @@
 .button7:hover {
   background-color: #e6e6e6;
 }
+
+@media screen and (max-width: 600px) {
+  .button7{
+    padding: 5px 10px;
+    margin-bottom: 5px;
+  }
+  .button7:hover {
+    background-color: transparent;
+  }
+}
