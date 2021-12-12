@@ -1,7 +1,5 @@
 .button {
-  background-color: #4CAF50; /* Green */
   border: none;
-  color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -49,4 +47,16 @@
   color: #EDF6F9;
   border: 0px solid #555555;
   border-radius: 5px;
+}
+
+.button7 {
+  padding: 0px 10px;
+  border: 1px solid #767676;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button7:hover {
+  background-color: #e6e6e6;
 }
