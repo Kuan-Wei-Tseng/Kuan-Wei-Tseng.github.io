@@ -88,10 +88,92 @@
   display: none;
 }
 
+.experience-date {
+  display: none;
+}
+
+#experience .entry .title h3 {
+  display: block;
+  margin: 0;
+  font-size: 108%;
+  color: #555;
+  font-weight: 600;
+}
+
+#experience .entry .title p {
+  display: none;
+}
+
+#experience .entry .title {
+  margin-top: 4px;
+}
+
+#experience .entry .body .experience-date {
+  display: none;
+}
+
+#experience .entry .body h5 {
+  margin: 0 0 3px 0;
+  font-weight: 600 !important;
+}
+
+#experience .entry .body .experience-role {
+  margin: 0 0 2px 0;
+  color: #444;
+  font-size: 95%;
+  font-weight: 400;
+}
+
+#education .entry .title h3 {
+  display: block;
+  margin: 0;
+  font-size: 108%;
+  color: #555;
+  font-weight: 600;
+}
+
+#education .entry .title p {
+  display: none;
+}
+
+#education .entry .title {
+  margin-top: 4px;
+}
+
+#education .entry .body h5 {
+  margin: 0 0 3px 0;
+  font-weight: 600 !important;
+}
+
+#education .entry .body p[style*="margin-top: 10px"] {
+  margin-top: 0 !important;
+  margin-bottom: 2px;
+  color: #444;
+  font-size: 95%;
+  font-weight: 400;
+}
+
+.about-layout {
+  display: flex;
+}
+
+.about-avatar {
+  flex: 1;
+  white-space: nowrap;
+}
+
 @media screen and (max-width: 600px) {
   .about{
     padding-right: 16px;
     padding-left: 16px;
+  }
+  .about-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-avatar {
+    width: 100%;
+    padding-bottom: 16px;
   }
   .about h5{
     font-size: 100%;
@@ -103,6 +185,18 @@
   .smallscreen{
     text-align: center;
   }
+  .smallscreen .w3-content {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+  .smallscreen .w3-content > div {
+    width: 100%;
+  }
+  .smallscreen .w3-content img {
+    width: 55% !important;
+    margin-bottom: 12px;
+  }
   .timeline {
     padding: 20px 0px 20px 0px;
   }
@@ -110,18 +204,90 @@
     left: 20px;
   }  
   .entry .title {
-    width: 0%;
-    padding-right:0px;
+    float: none;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 50px;
     text-align: left;
+    margin-bottom: 4px;
   }
   .entry .title:before { 
     left: 14px;
-    top: 6px;
+    top: 10px;
+  }
+  .entry .title .w3-hide-small {
+    display: block !important;
+  }
+  .entry .title h3 {
+    margin: 0;
+    font-size: 115%;
+  }
+  .entry .title p {
+    margin: 0;
   }
   .entry .body {
     float: none;
     width: 100%;
     padding-left: 50px;
+  }
+  #experience .entry .body .w3-hide-medium.w3-hide-large,
+  #education .entry .body .w3-hide-medium.w3-hide-large {
+    display: none !important;
+  }
+
+  #experience .entry .title h3 {
+    display: block !important;
+    margin: 0;
+    font-size: 100%;
+    font-weight: 600;
+    color: #666;
+  }
+  #experience .entry .title p {
+    display: none;
+  }
+
+  #experience .entry .body h5 {
+    margin: 0 0 2px 0;
+    font-size: 102%;
+    font-weight: 600 !important;
+  }
+  #experience .entry .body p {
+    margin: 0;
+  }
+  #experience .entry .body .experience-date {
+    display: none;
+  }
+  #experience .entry .body .experience-role {
+    margin: 0;
+    font-size: 94%;
+    color: #444;
+    font-weight: 400;
+  }
+  #education .entry .title h3 {
+    display: block !important;
+    margin: 0;
+    font-size: 100%;
+    font-weight: 600;
+    color: #666;
+  }
+  #education .entry .title p {
+    display: none;
+  }
+  #education .entry .body h5 {
+    margin: 0 0 2px 0;
+    font-size: 102%;
+    font-weight: 600 !important;
+  }
+  #education .entry .body p[style*="margin-top: 10px"] {
+    margin: 0;
+    font-size: 94%;
+    color: #444;
+    font-weight: 400;
+  }
+  #experience .entry .body ul {
+    margin-top: 6px;
+    margin-bottom: 8px;
+    padding-left: 1.1em;
   }
   .detail{
     display: none;
