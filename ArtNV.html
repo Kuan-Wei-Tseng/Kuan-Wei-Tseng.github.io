@@ -1,86 +1,210 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>ArtNV</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:600,700">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-body, html {height: 100%}
+  body, h1, h2, h3, h4, h5, h6 { font-family: "Lato", sans-serif; }
+  body {
+    margin: 0;
+    color: #222;
+    background: #f4f5f7;
+    line-height: 1.6;
+  }
+
+  .page {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 32px 20px 56px;
+  }
+
+  .hero {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 28px 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    text-align: center;
+  }
+
+  .hero h1 {
+    margin: 0 0 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+    line-height: 1.25;
+  }
+
+  .authors {
+    margin: 8px 0 2px;
+    font-size: 1.02rem;
+  }
+
+  .venue {
+    margin: 0;
+    color: #555;
+  }
+
+  .links {
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .link-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 10px 8px;
+    text-decoration: none;
+    color: #1f3a8a;
+    border: 1px solid #c7d2fe;
+    border-radius: 10px;
+    background: #eef2ff;
+    font-weight: 700;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .link-btn:hover {
+    background: #dbeafe;
+    color: #1e40af;
+  }
+
+  .section-card {
+    background: #ffffff;
+    margin-top: 20px;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .section-card h2 {
+    margin: 0 0 12px;
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .figure-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    background: #fafafa;
+  }
+
+  .section-card p {
+    margin: 12px 0 0;
+  }
+
+  .cite-box {
+    margin-top: 10px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 12px 14px;
+  }
+
+  .cite-box pre {
+    margin: 0;
+    overflow-x: auto;
+    white-space: pre;
+    font-size: 0.9rem;
+  }
+
+  a { color: #1d4ed8; }
+  a:hover { color: #1e3a8a; }
+
+  @media (max-width: 700px) {
+    .page {
+      padding: 20px 14px 36px;
+    }
+
+    .hero {
+      padding: 20px 16px;
+    }
+
+    .links {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .link-btn {
+      font-size: 0.95rem;
+      padding: 9px 8px;
+    }
+  }
 </style>
 </head>
 <body>
+  <main class="page">
+    <section class="hero">
+      <h1>Artistic Style Novel View Synthesis<br>Based on A Single Image</h1>
+      <p class="authors">
+        <a href="index.html">Kuan-Wei Tseng</a>,
+        <a href="https://yaochih.github.io">Yao-Chih Lee</a>,
+        <a href="https://imp.iis.sinica.edu.tw">Chu-Song Chen</a>
+      </p>
+      <p class="venue">CVPR 2022 Workshop</p>
 
-<div class="w3-light-grey">
-  <div class="w3-display-topmiddle">
-    <!-- <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1> -->
-    <h1 class="w3-animate-top" style="text-align: center;">Artistic Style Novel View Synthesis <br>Based on A Single Image</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:100%">
-    <p class="w3-large w3-center"><a href="index.html" style="text-decoration:none">Kuan-Wei Tseng</a>, <a href="https://yaochih.github.io" style="text-decoration:none">Yao-Chih Lee</a>, <a href="https://imp.iis.sinica.edu.tw" style="text-decoration:none">Chu-Song Chen</a></p>
-    <p class="w3-large w3-center">In CVPR 2022 Workshop</p>
+      <div class="links">
+        <a class="link-btn" href="https://openaccess.thecvf.com/content/CVPR2022W/CVFAD/papers/Tseng_Artistic_Style_Novel_View_Synthesis_Based_on_a_Single_Image_CVPRW_2022_paper.pdf"><i class="fa fa-file-pdf-o"></i> Paper</a>
+        <a class="link-btn" href="https://github.com/Kuan-Wei-Tseng/ArtNV"><i class="fa fa-github"></i> Code</a>
+        <a class="link-btn" href="https://youtu.be/aJDJdiGPbk4"><i class="fa fa-youtube-play"></i> Video</a>
+        <a class="link-btn" href="images/Poster.png"><i class="fa fa-external-link"></i> Poster</a>
+      </div>
+    </section>
 
-    <table style="width:100%">
-      <thead>
-        <tr>
-          <th><a href="https://openaccess.thecvf.com/content/CVPR2022W/CVFAD/papers/Tseng_Artistic_Style_Novel_View_Synthesis_Based_on_a_Single_Image_CVPRW_2022_paper.pdf" style="text-decoration:none"><i class="fa fa-file-pdf-o" style="padding-top:6px;font-size:18px;"></i></a></th>
-          <th><a href="https://github.com/Kuan-Wei-Tseng/ArtNV" style="text-decoration:none"><i class="fa fa-github" aria-hidden="true" style="padding-top:6px;font-size:20px"></i></a></th>
-          <th><a href="https://youtu.be/aJDJdiGPbk4"><i class="fa fa-youtube-square" aria-hidden="true" style="padding-top:6px;font-size:20px"></i></a></th>
-          <th><a href="images/Poster.png"><i class="fa fa-external-link fa-fw" style="padding-top:6px;font-size:20px"></i></a></th>
-        </tr>
+    <section class="section-card">
+      <h2>Method Overview</h2>
+      <img src="images/ArtNVpipeline.png" class="figure-img" alt="ArtNV pipeline">
+      <p>
+        ArtNV is a two-stage approach: a view synthesis stage followed by style transfer.
+        Before neural style transfer, we perform occlusion-aware dense matching with optical flow
+        to improve spatial consistency.
+      </p>
+    </section>
 
-      </thead>
-      <tbody>
-        <tr>
-          <td style="text-align:center"><a href="https://openaccess.thecvf.com/content/CVPR2022W/CVFAD/papers/Tseng_Artistic_Style_Novel_View_Synthesis_Based_on_a_Single_Image_CVPRW_2022_paper.pdf" style="text-decoration:none">Paper</a></td>
-          <td style="text-align:center"><a href="https://github.com/Kuan-Wei-Tseng/ArtNV" style="text-decoration:none">Codes</a></td>
-          <td style="text-align:center"><a href="https://youtu.be/aJDJdiGPbk4" style="text-decoration:none">Video</a></td>
-          <td style="text-align:center"><a href="images/Poster.png" style="text-decoration:none">Poster</a></td>
-        </tr>
-      </tbody>
-    </table>
+    <section class="section-card">
+      <h2>VR Application</h2>
+      <img src="images/artnv_vr.jpg" class="figure-img" alt="ArtNV VR application">
+      <p>
+        We model unreachable regions in VR using stylized novel view synthesis as an alternative
+        to full 3D models or 360 images. Users can view a stereoscopic pair synthesized from
+        monocular input. See the related poster paper
+        <a href="documents/tseng20223dvr.pdf">here</a>.
+      </p>
+    </section>
 
-    <div style="height:5vh"></div>
-    <img src="images/ArtNVpipeline.png" style="width:800px" alt="">
-    <p class="w3-large"> It is a two-stage method that contains a view synthesis stage and a style transfer stage. Before neural style transfer, we perform occlusion aware dense matching using optical flow to ensure spatial consistency.</p>
-    
-    <img src="images/artnv_vr.jpg" style="width:800px" alt="">
-    <p class="w3-large"> We propose modeling the unreachable area in VR with stylized novel view synthesis as an alternative to actual 3D model or 360 image. A: users can see a stereoscopic image pair synthesized from the monocular content in VR. See <a href="documents/tseng20223dvr.pdf">here</a> more information.</p>
-
-    <hr class="w3-border-grey" style="margin:auto;width:100%">
-    <p class="w3-large"> If you find our paper or codes helpful, please cite</p>
-    <div class="w3-light-grey" style="width:800px;padding-top: 1px;padding-left: 10px;padding-right: 10px;">
-      <pre style="overflow: auto;word-wrap: break-word;">
-<code>@InProceedings{Tseng_2022_CVPRW,
+    <section class="section-card">
+      <h2>Citation</h2>
+      <p>If you find our paper or code helpful, please cite:</p>
+      <div class="cite-box">
+        <pre><code>@InProceedings{Tseng_2022_CVPRW,
     author    = {Tseng, Kuan-Wei and Lee, Yao-Chih and Chen, Chu-Song},
     title     = {Artistic Style Novel View Synthesis Based on A Single Image},
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
     month     = {June},
     year      = {2022},
 }</code></pre>
-    </div>
+      </div>
 
-    <p class="w3-large"> For VR application, please cite</p>
-
-    <div class="w3-light-grey" style="width:800px;padding-top: 1px;padding-left: 10px;padding-right: 10px;">
-      <pre style="overflow: auto;word-wrap: break-word;">
-<code>@InProceedings{Tseng_2022_SIGGRAPH,
+      <p style="margin-top: 16px;">For VR application, please cite:</p>
+      <div class="cite-box">
+        <pre><code>@InProceedings{Tseng_2022_SIGGRAPH,
     author    = {Tseng, Kuan-Wei and Huang, Jing-Yuan and Chen, Yang-Sheng and Chen, Chu-Song and Hung, Yi-Ping},
     title     = {Pseudo-3D Scene Modeling for Virtual Reality Using Stylized Novel View Synthesis},
     booktitle = {ACM SIGGRAPH 2022 Posters},
     month     = {July},
     year      = {2022},
 }</code></pre>
-    </div>
-
-
-  </div>
-</div>
-
+      </div>
+    </section>
+  </main>
 </body>
 </html>
 
