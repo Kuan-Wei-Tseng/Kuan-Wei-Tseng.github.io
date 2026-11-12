@@ -1,530 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>KUAN-WEI TSENG</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style/style.css">
-<link rel="stylesheet" href="style/button.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
-.bgimg {
-  background-position: top;
-  background-size: cover;
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.2)
-  ),url("images/wide.jpg");
-  min-height: 100%;
-  height: 100vh;
-}
-</style>
-<meta name="google-site-verification" content="eutscxKI2MHwSTIrsexJAcgFW6f74z-OLQOyMEVuaQ8" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>KUAN-WEI TSENG</title>
+  <meta name="description" content="Kuan-Wei Tseng — software engineer working in visual computing, 3D computer vision, deep learning, and interactive systems.">
+  <meta name="google-site-verification" content="eutscxKI2MHwSTIrsexJAcgFW6f74z-OLQOyMEVuaQ8">
+  <link rel="stylesheet" href="style/style.css">
+  <script src="scripts/site.js" defer></script>
+</head>
 <body>
-
-<!-- Navbar -->
-<!-- Navbar (sit on top) -->
-<div class="w3-top" style="z-index: 100;">
-  <div class="w3-bar w3-black w3-padding w3-card">
-    <a href="#top" class="w3-bar-item w3-button w3-hide-medium"><b>KUAN-WEI TSENG</b></a>
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="Hamburger()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#experience" class="w3-bar-item w3-button">EXPERIENCE</a>
-      <a href="#education" class="w3-bar-item w3-button">EDUCATION</a>
-      <a href="#publication" class="w3-bar-item w3-button">PUBLICATIONS</a>
-      <a href="#projects" class="w3-bar-item w3-button">PREPRINTS</a>
+  <a class="skip-link" href="#page-title">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="site-brand" href="#top">KUAN-WEI TSENG</a>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="menu-button" type="button" popovertarget="navDemo" popovertargetaction="toggle" aria-controls="navDemo">Menu</button>
+        <ul class="site-menu" id="navDemo" popover="auto">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#experience">EXPERIENCE</a></li>
+          <li><a href="#education">EDUCATION</a></li>
+          <li><a href="#publication">PUBLICATIONS</a></li>
+          <li><a href="#projects">PREPRINTS</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
-</div>
-
-  <!-- Navbar on small screens -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px; z-index: 100;">
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="Hamburger()">ABOUT</a>
-  <a href="#experience" class="w3-bar-item w3-button w3-padding-large" onclick="Hamburger()">EXPERIENCE</a>
-  <a href="#education" class="w3-bar-item w3-button w3-padding-large" onclick="Hamburger()">EDUCATION</a>
-  <a href="#publication" class="w3-bar-item w3-button w3-padding-large" onclick="Hamburger()">PUBLICATIONS</a>
-  <a href="#projects" class="w3-bar-item w3-button w3-padding-large" onclick="Hamburger()">PREPRINTS</a>
-</div>
-
-<!-- Header -->
-<header class="w3-container w3-light-grey bgimg" style="padding:128px 16px 64px;">
-  <div class="w3-display-left" style="padding:10%;color:white">
-    <h1>KUAN-WEI TSENG</h1>
-    <!-- <h5>Graduate Research and Teaching Assistant,<br>Dept. of Computer Science and Information Engineering,<br>National Taiwan University (NTU)</h5> -->
-    <h5>Software Engineer</h5>
-    <p><a href="documents/CV.pdf" class="button1">Download Resume</a></p>
-  </div>
-</header>
-
-<!-- First Grid -->
-<div class="w3-row-padding w3-padding-32 w3-container" id="about">
-  <h1 class="w3-center" style="padding-bottom: 16px;"><b>ABOUT</b></h1>
-  <div class="w3-content about-layout" style="padding-bottom: 32px;">
-    <div class="w3-center about-avatar">
-      <span style="display: inline-block; height: 100%; vertical-align: middle;"></span>
-      <img src="images/face.png" style="width:65%; vertical-align: middle;" class="w3-circle" alt="Alps">
-    </div>    
-    <div class="about" style="flex: 2">
-      <h6 style="text-align:justify;">
+  </header>
+  <main id="top">
+    <header class="profile-hero">
+      <picture class="hero-media">
+        <source type="image/webp" srcset="images/optimized/wide-800.webp 800w, images/optimized/wide-1600.webp 1600w, images/optimized/wide-1920.webp 1920w" sizes="100vw">
+        <img src="images/wide.jpg" alt="" fetchpriority="high" width="1920" height="1440">
+      </picture>
+      <div class="hero-content container">
+        <h1 id="page-title" tabindex="-1">KUAN-WEI TSENG</h1>
+        <p class="hero-role">Software Engineer</p>
+        <a href="documents/CV.pdf" class="button button-primary">Download Resume</a>
+      </div>
+    </header>
+    <section class="section" id="about">
+      <h2 class="section-heading"><b>ABOUT</b></h2>
+      <div class="container about-layout">
+        <div class="about-avatar">
+          <picture><source type="image/webp" srcset="images/optimized/face-320.webp 320w, images/optimized/face-368.webp 368w" sizes="(max-width: 768px) 160px, 224px"><img src="images/face.png" alt="Kuan-Wei Tseng" loading="lazy" decoding="async" width="368" height="368"></picture>
+        </div>
+        <div class="about-copy">
+          <p>
         I am an Application Software Engineer at <a href="https://www.appliedintuition.com/">Applied Intuition</a>, where I build customer-facing features and workflows for simulation and data tooling in automotive programs.
-      </h6>
-      <h6 style="text-align:justify;">
+      </p>
+          <p>
         Previously, I was a Computer Vision Engineer at Mujin, Inc., focusing on 3D object detection. I received my M.S. from Tokyo Institute of Technology, advised by Prof. <a href="https://d-itlab.c.titech.ac.jp">Ikuro Sato</a>, and collaborated with Prof. <a href="https://open-vision.sc.e.titech.ac.jp/~reikawa/">Rei Kawakami</a> and Prof. <a href="https://satoshi-ikehata.github.io">Satoshi Ikehata</a> on human motion prediction with transformers. During graduate school, I also interned at Apple Japan and Denso IT Lab.
-      </h6>
-      <h6 style="text-align:justify;">
+      </p>
+          <p>
         Before graduate school, I worked at NTU in the <a href="https://www.ntuimlab.tw">Image and Vision Lab (imLab)</a> and <a href="https://imp.iis.sinica.edu.tw">AI Application and Integration Lab (AI^2 Lab)</a> with Prof. <a href="https://homepage.iis.sinica.edu.tw/pages/song/index_en.html">Chu-Song Chen</a> and Prof. <a href="https://www.csie.ntu.edu.tw/~hung/index.html#about">Yi-Ping Hung</a>. I also completed my B.S. in Engineering at NTU under Prof. <a href="https://www.csie.ntu.edu.tw/~hung/index.html#about">Yi-Ping Hung</a>. My interests are in visual computing, especially 3D computer vision, deep learning, and interactive systems.
-      </h6>
-    </div>
-  </div>
-</div>
-
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="experience">
-  <h1 class="w3-center" style="padding-bottom: 16px;"><b>EXPERIENCE</b></h1>
-  <div class="w3-content" style="display: flex; padding-bottom: 32px;">
-    <div class="w3-center timeline">
-
-      <div class="entry education">
-        <div class="title">
-          <h3 class="w3-hide-small">2024.10 - Current</h3>
-          <p  class="w3-hide-small">Application Software Engineer</p>
-        </div>
-        <div class="body">
-          <h5 style="font-weight: 700;">Applied Intuition</h5>
-          <p class="experience-date">2024.10 - Current</p>
-          <p class="experience-role">Application Software Engineer</p>
-
-          <button class="button7 collapsible">See More +</button>
-          <div class="detail">
-            <ul>
-              <li>Developed customer-facing interfaces for global OEM and Tier 1 automotive programs.</li>
-              <li>Implemented customer-specific features on Applied Intuition’s simulation and data tooling products.</li>
-              <li>Delivered technical training and onboarding sessions for customer engineering teams.</li>
-            </ul>
-            <p>Selected customer projects:</p>
-            <ul>
-              <li><a href="https://www.appliedintuition.com/case-studies/aisin">AISIN: virtual validation for ADAS and autonomous driving</a></li>
-              <li><a href="https://www.appliedintuition.com/blog/applied-intuition-komatsu-partnership">KOMATSU: simulation platform for construction equipment</a></li>
-            </ul>
-          </div>
+      </p>
         </div>
       </div>
-
-      <div class="entry education">
-        <div class="title">
-          <h3 class="w3-hide-small">2024.04 - 2024.09</h3>
-          <p  class="w3-hide-small">Computer Vision Engineer</p>
-        </div>
-        <div class="body">
-          <h5 style="font-weight: 700;">Mujin Inc.</h5>
-          <p class="experience-date">2024.04 - 2024.09</p>
-          <p class="experience-role">Computer Vision Engineer</p>
-
-          <button class="button7 collapsible">See More +</button>
-          <div class="detail">
-            <ul>
-              <li>Designed features to improve speed and recall for multi-class 3D object detection by leveraging hand-crafted geometric rules for plastic containers; demonstrated results at Logis-Tech Tokyo 2024.</li>
-              <li>Applied unsupervised machine learning for color classification on reflective surfaces under both low-light and bright conditions; demonstrated results at Robot Technology Japan 2024.</li>
-            </ul>
+    </section>
+    <section id="experience" class="section section-muted">
+      <h2 class="section-heading">EXPERIENCE</h2>
+      <div class="container timeline">
+        <article class="entry">
+          <p class="entry-date">2024.10 - Current</p>
+          <div class="entry-body">
+            <h3>Applied Intuition</h3>
+            <p class="entry-role">Application Software Engineer</p>
+            <details class="entry-details">
+              <summary>See More<span class="visually-hidden"> about Applied Intuition — Application Software Engineer</span></summary>
+              <ul>
+                <li>Developed customer-facing interfaces for global OEM and Tier 1 automotive programs.</li>
+                <li>Implemented customer-specific features on Applied Intuition’s simulation and data tooling products.</li>
+                <li>Delivered technical training and onboarding sessions for customer engineering teams.</li>
+              </ul>
+              <p>Selected customer projects:</p>
+              <ul>
+                <li><a href="https://www.appliedintuition.com/case-studies/aisin">AISIN: virtual validation for ADAS and autonomous driving</a></li>
+                <li><a href="https://www.appliedintuition.com/blog/applied-intuition-komatsu-partnership">KOMATSU: simulation platform for construction equipment</a></li>
+              </ul>
+            </details>
           </div>
-        </div>
+        </article>
+        <article class="entry">
+          <p class="entry-date">2024.04 - 2024.09</p>
+          <div class="entry-body">
+            <h3>Mujin Inc.</h3>
+            <p class="entry-role">Computer Vision Engineer</p>
+            <details class="entry-details">
+              <summary>See More<span class="visually-hidden"> about Mujin Inc. — Computer Vision Engineer</span></summary>
+              <ul>
+                <li>Designed features to improve speed and recall for multi-class 3D object detection by leveraging hand-crafted geometric rules for plastic containers; demonstrated results at Logis-Tech Tokyo 2024.</li>
+                <li>Applied unsupervised machine learning for color classification on reflective surfaces under both low-light and bright conditions; demonstrated results at Robot Technology Japan 2024.</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+        <article class="entry">
+          <p class="entry-date">2023.03 - 2023.09</p>
+          <div class="entry-body">
+            <h3>Apple Inc.</h3>
+            <p class="entry-role">Robotics Intern</p>
+            <details class="entry-details">
+              <summary>See More<span class="visually-hidden"> about Apple Inc. — Robotics Intern</span></summary>
+              <ul>
+                <li>Working on robotics solution (localization and mapping, point cloud segmentation) for product and services validation. </li>
+              </ul>
+            </details>
+          </div>
+        </article>
+        <article class="entry">
+          <p class="entry-date">2022.11 - 2023.02</p>
+          <div class="entry-body">
+            <h3>Denso IT Laboratory</h3>
+            <p class="entry-role">Research Intern</p>
+            <details class="entry-details">
+              <summary>See More<span class="visually-hidden"> about Denso IT Laboratory — Research Intern</span></summary>
+              <ul>
+                <li>Developed interactive object segmentation using transformer-based model for fast data annotation.</li>
+              </ul>
+              <p> Mentor: Dr. <a href="https://sites.google.com/view/teppei-suzuki">Teppei Suzuki</a>.</p>
+            </details>
+          </div>
+        </article>
+        <article class="entry">
+          <p class="entry-date">2022 - 2024</p>
+          <div class="entry-body">
+            <h3>Tokyo Institute of Technology (Tokyo Tech)</h3>
+            <p class="entry-role">Research Assistant</p>
+            <details class="entry-details">
+              <summary>See More<span class="visually-hidden"> about Tokyo Institute of Technology (Tokyo Tech) — Research Assistant</span></summary>
+              <ul>
+                <li>Working on human motion generation projects. </li>
+              </ul>
+              <p> Advisor: Prof. <a href="https://d-itlab.c.titech.ac.jp">Ikuro Sato</a>, Prof. <a href="https://d-itlab.c.titech.ac.jp/~reikawa/">Rei Kawakami</a></p>
+            </details>
+          </div>
+        </article>
+        <article class="entry">
+          <p class="entry-date">2019.09 - 2022.10</p>
+          <div class="entry-body">
+            <h3>National Taiwan University (NTU)</h3>
+            <p class="entry-role">Research Assistant</p>
+            <details class="entry-details">
+              <summary>See More<span class="visually-hidden"> about National Taiwan University (NTU) — Research Assistant</span></summary>
+              <ul>
+                <li>Developed learning-based methods for camera pose estimation, image depth estimation, video stabilization, view synthesis and style transfer.</li>
+                <li>Developed visual-inertial fusion methods for camera and object pose estimation. Quantified the influence of IMU noise parameters on localization performance.</li>
+                <li>Developed interactive systems with visual, auditory, olfactory, or haptic feedbacks for augemented reality and virtual reality applications.</li>
+              </ul>
+              <p> See more in Publications and Projects.</p>
+              <p> Advisor: Prof. <a href="https://homepage.iis.sinica.edu.tw/pages/song/index_en.html">Chu-Song Chen</a>, Prof. <a href="https://www.csie.ntu.edu.tw/~hung/index.html#about">Yi-Ping Hung</a>.</p>
+            </details>
+          </div>
+        </article>
+        <article class="entry">
+          <p class="entry-date">Spring 2021 &amp; Spring 2022</p>
+          <div class="entry-body">
+            <h3>National Taiwan University (NTU)</h3>
+            <p class="entry-role">Teaching Assistant</p>
+            <details class="entry-details">
+              <summary>See More<span class="visually-hidden"> about National Taiwan University (NTU) — Teaching Assistant</span></summary>
+              <ul>
+                <li>[CSIE 5249] 3D Computer Vision with Deep Learning Applications<br>Instructor: Prof. <a href="https://homepage.iis.sinica.edu.tw/pages/song/index_en.html">Chu-Song Chen</a></li>
+                <li>[CSIE 5079] Pattern Analysis and Classification<br>Instructor: Prof. <a href="https://www.csie.ntu.edu.tw/~hung/index.html#about">Yi-Ping Hung</a>.</li>
+                <li>[CSIE 4004] Computer Science and Information Technology (II)<br>Instructor: Prof. <a href="https://homepage.iis.sinica.edu.tw/pages/song/index_en.html">Chu-Song Chen</a></li>
+              </ul>
+            </details>
+          </div>
+        </article>
       </div>
-
-      <div class="entry education">
-        <div class="title">
-          <h3 class="w3-hide-small">2023.03 - 2023.09</h3>
-          <p  class="w3-hide-small">Robotics Intern</p>
-        </div>
-        <div class="body">
-          <h5 style="font-weight: 700;">Apple Inc.</h5>
-          <p class="experience-date">2023.03 - 2023.09</p>
-          <p class="experience-role">Robotics Intern</p>
-
-          <button class="button7 collapsible">See More +</button>
-          <div class="detail">
-            <ul>
-              <li>Working on robotics solution (localization and mapping, point cloud segmentation) for product and services validation. </li>             
-            </ul>
+    </section>
+    <section id="education" class="section">
+      <h2 class="section-heading">EDUCATION</h2>
+      <div class="container timeline">
+        <article class="entry">
+          <p class="entry-date">2022.04 - 2024.03</p>
+          <div class="entry-body">
+            <h3>Tokyo Institute of Technology (Tokyo Tech)</h3>
+            <p class="entry-role">M.S., Department of Computer Science <span class="entry-category">(Degree Program)</span></p>
+            <details class="entry-details">
+              <summary>See More<span class="visually-hidden"> about Tokyo Institute of Technology (Tokyo Tech) — M.S., Department of Computer Science</span></summary>
+              <ul>
+                <li>Joined <a href="https://d-itlab.c.titech.ac.jp">Recognition and Learning Algorithm Lab (Sato Lab)</a>.</li>
+              </ul>
+              <p> Advisor: Prof. <a href="https://scholar.google.com/citations?user=WGKTs8sAAAAJ">Ikuro Sato</a>, <a href="https://d-itlab.c.titech.ac.jp/~reikawa/">Rei Kawakami</a></p>
+            </details>
           </div>
-        </div>
-      </div>       
-
-      <div class="entry education">
-        <div class="title">
-          <h3 class="w3-hide-small">2022.11 - 2023.02</h3>
-          <p  class="w3-hide-small">Research Intern</p>
-        </div>
-        <div class="body">
-          <h5 style="font-weight: 700;">Denso IT Laboratory</h5>
-          <p class="experience-date">2022.11 - 2023.02</p>
-          <p class="experience-role">Research Intern</p>
-          <button class="button7 collapsible">See More +</button>
-          <div class="detail">
-            <ul>
-              <li>Developed interactive object segmentation using transformer-based model for fast data annotation.</li> 
-            </ul>
-            <p> Mentor: Dr. <a href="https://sites.google.com/view/teppei-suzuki">Teppei Suzuki</a>.</p>
+        </article>
+        <article class="entry">
+          <p class="entry-date">2016 - 2020</p>
+          <div class="entry-body">
+            <h3>National Taiwan University (NTU)</h3>
+            <p class="entry-role">B.S. in Engineering, Department of Mechanical Engineering <span class="entry-category">(Degree Program)</span></p>
+            <details class="entry-details">
+              <summary>See More<span class="visually-hidden"> about National Taiwan University (NTU) — B.S. in Engineering, Department of Mechanical Engineering</span></summary>
+              <ul>
+                <li>Joined Image and Vision Lab (imLab), directed by Dr. Yi-Ping Hung at the Dept. of Computer Science as a research student since 2018. (See Research Experience)</li>
+                <li>Received multidisciplinary training in both software and hardware, conducted researchs on computer vision, robotics, and human computer interaction.</li>
+              </ul>
+              <p> Research Advisor: Prof. <a href="https://www.csie.ntu.edu.tw/~hung/index.html#about">Yi-Ping Hung</a>.</p>
+            </details>
           </div>
-        </div>
-      </div> 
-
-      <div class="entry education">
-        <div class="title">
-          <h3 class="w3-hide-small">2022 - 2024</h3>
-          <p  class="w3-hide-small">Research Assistant</p>
-        </div>
-        <div class="body">
-          <h5 style="font-weight: 700;">Tokyo Institute of Technology (Tokyo Tech)</h5>
-          <p class="experience-date">2022 - 2024</p>
-          <p class="experience-role">Research Assistant</p>
-
-          <button class="button7 collapsible">See More +</button>
-          <div class="detail">
-            <ul>
-              <li>Working on human motion generation projects. </li>             
-            </ul>
-            <p> Advisor: Prof. <a href="https://d-itlab.c.titech.ac.jp">Ikuro Sato</a>, Prof. <a href="https://d-itlab.c.titech.ac.jp/~reikawa/">Rei Kawakami</a></p>
+        </article>
+        <article class="entry">
+          <p class="entry-date">Summer 2017</p>
+          <div class="entry-body">
+            <h3>University of Oxford</h3>
+            <p class="entry-role">Advanced Humanity and English Language Programme <span class="entry-category">(Exchange Student)</span></p>
+            <details class="entry-details">
+              <summary>See More<span class="visually-hidden"> about University of Oxford — Advanced Humanity and English Language Programme</span></summary>
+              <ul>
+                <li>Study abroad as an Exchange Student from National Taiwan University.</li>
+                <li>Comprehensive academic English program covering topics such as academic and creative writing, debating, British culture, job seeking skills, etc.</li>
+              </ul>
+            </details>
           </div>
-        </div>
-      </div> 
-
-
-      <!-- NTU -->
-      <div class="entry education">
-        <div class="title">
-          <h3 class="w3-hide-small">2019.09 - 2022.10</h3>
-          <p  class="w3-hide-small">Research Assistant</p>
-        </div>
-        <div class="body">
-          <h5 style="font-weight: 700;">National Taiwan University (NTU)</h5>
-          <p class="experience-date">2019.09 - 2022.10</p>
-          <p class="experience-role">Research Assistant</p>
-
-          <button class="button7 collapsible">See More +</button>
-          <div class="detail">
-            <ul>
-              <li>Developed learning-based methods for camera pose estimation, image depth estimation, video stabilization, view synthesis and style transfer.</li>
-              <li>Developed visual-inertial fusion methods for camera and object pose estimation. Quantified the influence of IMU noise parameters on localization performance.</li>
-              <li>Developed interactive systems with visual, auditory, olfactory, or haptic feedbacks for augemented reality and virtual reality applications.</li>              
-            </ul>
-            <p> See more in Publications and Projects.</p>
-            <p> Advisor: Prof. <a href="https://homepage.iis.sinica.edu.tw/pages/song/index_en.html">Chu-Song Chen</a>, Prof. <a href="https://www.csie.ntu.edu.tw/~hung/index.html#about">Yi-Ping Hung</a>.</p>
-          </div>
-        </div>
-      </div> 
-      
-      <!-- NTU TA -->
-      <div class="entry education">
-        <div class="title">
-          <h3 class="w3-hide-small">Spring 2021 & Spring 2022</h3>
-          <p  class="w3-hide-small">Teaching Assistant</p>
-        </div>
-        <div class="body">
-          <h5 style="font-weight: 700;">National Taiwan University (NTU)</h5>
-          <p class="experience-date">Spring 2021 & Spring 2022</p>
-          <p class="experience-role">Teaching Assistant</p>
-          <button class="button7 collapsible">See More +</button>
-          <div class="detail">
-            <ul>
-              <li>[CSIE 5249] 3D Computer Vision with Deep Learning Applications<br>Instructor: Prof. <a href="https://homepage.iis.sinica.edu.tw/pages/song/index_en.html">Chu-Song Chen</a></li>
-              <li>[CSIE 5079] Pattern Analysis and Classification<br>Instructor: Prof. <a href="https://www.csie.ntu.edu.tw/~hung/index.html#about">Yi-Ping Hung</a>.</li>
-              <li>[CSIE 4004] Computer Science and Information Technology (II)<br>Instructor: Prof. <a href="https://homepage.iis.sinica.edu.tw/pages/song/index_en.html">Chu-Song Chen</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>     
-    </div>
-  </div>
-</div>
-
-<div class="w3-row-padding w3-padding-64 w3-container" id="education">
-  <h1 class="w3-center" style="padding-bottom: 16px;"><b>EDUCATION</b></h1>
-  <div class="w3-content" style="display: flex; padding-bottom: 32px;">
-    <div class="w3-center timeline">
-      <!-- NTU -->
-      <div class="entry education">
-        <div class="title">
-          <h3 class="w3-hide-small">2022.04 - 2024.03</h3>
-          <p  class="w3-hide-small">Degree Program</p>
-        </div>
-        <div class="body">
-          <h5 style="font-weight: 700;">Tokyo Institute of Technology (Tokyo Tech)</h5>
-          <p style="margin-top: 10px;">M.S., Department of Computer Science</p>
-          <p class="w3-hide-medium w3-hide-large">2022 - 2024 </p>
-          <button class="button7 collapsible">See More +</button>
-          <div class="detail">
-            <ul>
-              <li>Joined <a href="https://d-itlab.c.titech.ac.jp">Recognition and Learning Algorithm Lab (Sato Lab)</a>.</li>
-            </ul>
-            <p> Advisor: Prof. <a href="https://scholar.google.com/citations?user=WGKTs8sAAAAJ">Ikuro Sato</a>, <a href="https://d-itlab.c.titech.ac.jp/~reikawa/">Rei Kawakami</a></p>
-          </div>
-        </div>
+        </article>
       </div>
-
-      <!-- NTU -->
-      <div class="entry education">
-        <div class="title">
-          <h3 class="w3-hide-small">2016 - 2020</h3>
-          <p  class="w3-hide-small">Degree Program</p>
-        </div>
-        <div class="body">
-          <h5 style="font-weight: 700;">National Taiwan University (NTU)</h5>
-          <p style="margin-top: 10px;">B.S. in Engineering, Department of Mechanical Engineering</p>
-          <p class="w3-hide-medium w3-hide-large">2016 - 2020</p>
-          <button class="button7 collapsible">See More +</button>
-          <div class="detail">
-            <ul>
-              <li>Joined Image and Vision Lab (imLab), directed by Dr. Yi-Ping Hung at the Dept. of Computer Science as a research student since 2018. (See Research Experience)</li>
-              <li>Received multidisciplinary training in both software and hardware, conducted researchs on computer vision, robotics, and human computer interaction.</li>
-            </ul>
-            <p> Research Advisor: Prof. <a href="https://www.csie.ntu.edu.tw/~hung/index.html#about">Yi-Ping Hung</a>.</p>
+    </section>
+    <section id="publication" class="section section-muted">
+      <h2 class="section-heading">PUBLICATIONS</h2>
+      <div class="container publication-list">
+        <article class="publication">
+          <figure class="publication-media">
+            <video controls playsinline preload="none" width="478" height="478" poster="images/optimized/viobjtrack-poster.webp" aria-label="Real-Time Object Pose Tracking System with Low Computational Cost for Mobile Devices preview">
+              <source src="images/optimized/viobjtrack.mp4" type="video/mp4">
+            </video>
+          </figure>
+          <div class="publication-copy">
+            <h3 id="viobjtrack-description"><b>Real-Time Object Pose Tracking System with Low Computational Cost for Mobile Devices</b></h3>
+            <p class="publication-meta"> Yo-Chung Lau, <b>Kuan-Wei Tseng</b>, Peng-Yuan Kao, I-Ju Hsieh, Hsiao-Ching Tseng, and <a href="https://www.csie.ntu.edu.tw/~hung/index.html#about">Yi-Ping Hung</a></p>
+            <p class="publication-meta"><i>IEEE Journal of Indoor and Seamless Positioning and Navigation, 2023.</i></p>
+            <div class="resource-links">
+              <a href="https://arxiv.org/abs/2210.12476" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  arXiv</a>
+              <a href="https://doi.org/10.1109/JISPIN.2023.3340987" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Publication</a>
+              <a href="https://imlabntu.github.io/LCCObjectPose/" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Project Page</a>
+              <a href="https://youtu.be/ZwpuZo8gX3s" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Video</a>
+            </div>
           </div>
-        </div>
+        </article>
+        <article class="publication">
+          <div class="publication-media">
+            <picture><source type="image/webp" srcset="images/optimized/viuwb-320.webp 320w, images/optimized/viuwb-640.webp 640w" sizes="(max-width: 640px) min(352px, calc(100vw - 32px)), (max-width: 768px) 192px, 256px"><img src="images/viuwb.png" alt="VIUNet: Deep Visual–Inertial–UWB Fusion for Indoor UAV Localization preview" loading="lazy" decoding="async" width="1242" height="1242"></picture>
+          </div>
+          <div class="publication-copy">
+            <h3><b>VIUNet: Deep Visual–Inertial–UWB Fusion for Indoor UAV Localization</b></h3>
+            <p class="publication-meta"> Peng-Yuan Kao, Hsui-Jui Chang, <b>Kuan-Wei Tseng</b>, <a href="https://timothychen1999.github.io/website/">Timothy Chen</a>, He-Lin Luo, <a href="https://www.csie.ntu.edu.tw/~hung/index.html#about">Yi-Ping Hung</a> </p>
+            <p class="publication-meta"><i>IEEE ACCESS 2023</i></p>
+            <div class="resource-links">
+              <a href="https://ieeexplore.ieee.org/document/10131904/" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Paper</a>
+              <a href="https://ieeexplore.ieee.org/document/10131904/" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Publication</a>
+              <a href="https://imlabntu.github.io/VIUNet/" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Project Page</a>
+            </div>
+          </div>
+        </article>
+        <article class="publication">
+          <div class="publication-media">
+            <picture><source type="image/webp" srcset="images/optimized/3dvr-320.webp 320w, images/optimized/3dvr-640.webp 640w" sizes="(max-width: 640px) min(352px, calc(100vw - 32px)), (max-width: 768px) 192px, 256px"><img src="images/3dvr.png" alt="Pseudo-3D Scene Modeling for Virtual Reality Using Stylized Novel View Synthesis preview" loading="lazy" decoding="async" width="2056" height="2056"></picture>
+          </div>
+          <div class="publication-copy">
+            <h3><b>Pseudo-3D Scene Modeling for Virtual Reality Using Stylized Novel View Synthesis</b></h3>
+            <p class="publication-meta"> <b>Kuan-Wei Tseng</b>, <a href="https://www.jing-yuan.info">Jing-Yuan Huang</a>, <a href="https://balalachen.github.io">Yang-Sheng Chen</a>, <a href="https://imp.iis.sinica.edu.tw">Chu-Song Chen</a>, <a href="https://www.csie.ntu.edu.tw/~hung/index.html#about">Yi-Ping Hung</a> </p>
+            <p class="publication-meta"><i>ACM SIGGRAPH 2022 Posters</i></p>
+            <div class="resource-links">
+              <a href="documents/tseng20223dvr.pdf" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Paper</a>
+              <a href="https://dl.acm.org/doi/abs/10.1145/3532719.3543232" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Publication</a>
+              <a href="https://youtu.be/ymQFY6ihP1Q" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Video</a>
+              <a href="ArtNV.html" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Project Page</a>
+            </div>
+          </div>
+        </article>
+        <article class="publication">
+          <figure class="publication-media">
+            <video controls playsinline preload="none" width="512" height="512" poster="images/optimized/artnv-poster.webp" aria-label="Artistic Style Novel View Synthesis Based on A Single Image preview">
+              <source src="images/optimized/artnv.mp4" type="video/mp4">
+            </video>
+          </figure>
+          <div class="publication-copy">
+            <h3 id="artnv-description"><b>Artistic Style Novel View Synthesis Based on A Single Image</b></h3>
+            <p class="publication-meta"> <b>Kuan-Wei Tseng</b>, <a href="https://yaochih.github.io">Yao-Chih Lee</a>, <a href="https://imp.iis.sinica.edu.tw">Chu-Song Chen</a></p>
+            <p class="publication-meta"><i>IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, 2022.</i></p>
+            <div class="resource-links">
+              <a href="https://openaccess.thecvf.com/content/CVPR2022W/CVFAD/papers/Tseng_Artistic_Style_Novel_View_Synthesis_Based_on_a_Single_Image_CVPRW_2022_paper.pdf" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Paper</a>
+              <a href="https://openaccess.thecvf.com/content/CVPR2022W/CVFAD/html/Tseng_Artistic_Style_Novel_View_Synthesis_Based_on_a_Single_Image_CVPRW_2022_paper.html" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Open Access</a>
+              <a href="https://youtu.be/aJDJdiGPbk4" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Video</a>
+              <a href="ArtNV.html" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Project Page</a>
+            </div>
+          </div>
+        </article>
+        <article class="publication">
+          <figure class="publication-media">
+            <video controls playsinline preload="none" width="250" height="250" poster="images/optimized/Deep3D-poster.webp" aria-label="3D Video Stabilization with Depth Estimation by CNN-based Optimization preview">
+              <source src="images/optimized/Deep3D.mp4" type="video/mp4">
+            </video>
+          </figure>
+          <div class="publication-copy">
+            <h3 id="Deep3D-description"><b>3D Video Stabilization with Depth Estimation by CNN-based Optimization</b></h3>
+            <p class="publication-meta"> <a href="https://yaochih.github.io">Yao-Chih Lee</a>, <b>Kuan-Wei Tseng</b>, Yu-Ta Chen, Chien-Cheng Chen, <a href="https://imp.iis.sinica.edu.tw">Chu-Song Chen</a>, <a href="https://www.csie.ntu.edu.tw/~hung/index.html#about">Yi-Ping Hung</a></p>
+            <p class="publication-meta"><i>IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2021.</i></p>
+            <div class="resource-links">
+              <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Lee_3D_Video_Stabilization_With_Depth_Estimation_by_CNN-Based_Optimization_CVPR_2021_paper.pdf" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Paper</a>
+              <a href="https://openaccess.thecvf.com/content/CVPR2021/html/Lee_3D_Video_Stabilization_With_Depth_Estimation_by_CNN-Based_Optimization_CVPR_2021_paper.html" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Open Access</a>
+              <a href="https://www.youtube.com/watch?v=pMluFVA7NDQ" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Video</a>
+              <a href="https://yaochih.github.io/deep3d-stabilizer.io/" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Project Page</a>
+            </div>
+          </div>
+        </article>
+        <article class="publication">
+          <div class="publication-media">
+            <picture><source type="image/webp" srcset="images/optimized/vrsmell-320.webp 320w, images/optimized/vrsmell-640.webp 640w" sizes="(max-width: 640px) min(352px, calc(100vw - 32px)), (max-width: 768px) 192px, 256px"><img src="images/vrsmell.jpg" alt="aBio: Active Bi-Olfactory Display Using Subwoofers for Virtual Reality preview" loading="lazy" decoding="async" width="780" height="780"></picture>
+          </div>
+          <div class="publication-copy">
+            <h3><b>aBio: Active Bi-Olfactory Display Using Subwoofers for Virtual Reality</b></h3>
+            <p class="publication-meta"> <a href="http://www.youyang-hu.com">You-Yang Hu</a>, Yao-Fu Jan, <b>Kuan-Wei Tseng</b>, <a href="https://www.linkedin.com/in/youshin/">You-Shin Tsai</a>, Hung-Ming Sung, Jin-Yao Lin, <a href="https://www.csie.ntu.edu.tw/~hung/index.html#about">Yi-Ping Hung</a></p>
+            <p class="publication-meta"><i>ACM International Conference on Multimedia (ACMMM), 2021.</i> <br><span class="publication-award">ORAL PAPER, BEST STUDENT PAPER</span></p>
+            <div class="resource-links">
+              <a href="documents/hu2021aBio.pdf" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Paper</a>
+              <a href="https://dl.acm.org/doi/10.1145/3474085.3475678" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Publication</a>
+              <a href="https://www.youtube.com/watch?v=R53b0H5C-IM" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Video</a>
+            </div>
+          </div>
+        </article>
+        <article class="publication">
+          <div class="publication-media">
+            <picture><source type="image/webp" srcset="images/optimized/pixstab-320.webp 320w, images/optimized/pixstab-640.webp 640w" sizes="(max-width: 640px) min(352px, calc(100vw - 32px)), (max-width: 768px) 192px, 256px"><img src="images/pixstab.jpg" alt="PixStabNet: Fast Multi-Scale Deep Online Video Stabilization with Pixel-Based Warping preview" loading="lazy" decoding="async" width="800" height="800"></picture>
+          </div>
+          <div class="publication-copy">
+            <h3><b>PixStabNet: Fast Multi-Scale Deep Online Video Stabilization with Pixel-Based Warping</b></h3>
+            <p class="publication-meta"> Yu-Ta Chen, <b>Kuan-Wei Tseng</b>, <a href="https://yaochih.github.io">Yao-Chih Lee</a>, Chun-Yu Chen, <a href="https://www.csie.ntu.edu.tw/~hung/index.html#about">Yi-Ping Hung</a> </p>
+            <p class="publication-meta"><i>IEEE International Conference on Image Processing (ICIP), 2021.</i></p>
+            <div class="resource-links">
+              <a href="documents/chen2021pix.pdf" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Paper</a>
+              <a href="https://ieeexplore.ieee.org/abstract/document/9506801" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Publication</a>
+              <span class="resource-unavailable">Video (unavailable)</span>
+            </div>
+          </div>
+        </article>
+        <article class="publication">
+          <div class="publication-media">
+            <picture><source type="image/webp" srcset="images/optimized/TaiChi-320.webp 320w, images/optimized/TaiChi-640.webp 640w" sizes="(max-width: 640px) min(352px, calc(100vw - 32px)), (max-width: 768px) 192px, 256px"><img src="images/TaiChi.jpg" alt="Augmented Tai-Chi Chuan Practice Tool with Pose Evaluation preview" loading="lazy" decoding="async" width="800" height="800"></picture>
+          </div>
+          <div class="publication-copy">
+            <h3><b>Augmented Tai-Chi Chuan Practice Tool with Pose Evaluation</b></h3>
+            <p class="publication-meta"> Yao-Fu Jan, <b>Kuan-Wei Tseng</b>, Peng-Yuan Kao, <a href="https://www.csie.ntu.edu.tw/~hung/index.html#about">Yi-Ping Hung</a></p>
+            <p class="publication-meta"><i>IEEE International Conference on Multimedia Information Processing and Retrieval (MIPR), 2021.</i><br><span class="publication-award">ORAL PAPER</span></p>
+            <div class="resource-links">
+              <a href="documents/jan2021TaiChi.pdf" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Paper</a>
+              <a href="https://ieeexplore.ieee.org/document/9565549" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Publication</a>
+              <span class="resource-unavailable">Video (unavailable)</span>
+            </div>
+          </div>
+        </article>
+        <article class="publication">
+          <div class="publication-media">
+            <picture><source type="image/webp" srcset="images/optimized/complementary-320.webp 320w, images/optimized/complementary-640.webp 640w" sizes="(max-width: 640px) min(352px, calc(100vw - 32px)), (max-width: 768px) 192px, 256px"><img src="images/complementary.png" alt="Camera Ego-Positioning Using Sensor Fusion and Complementary Method preview" loading="lazy" decoding="async" width="858" height="814"></picture>
+          </div>
+          <div class="publication-copy">
+            <h3><b>Camera Ego-Positioning Using Sensor Fusion and Complementary Method</b></h3>
+            <p class="publication-meta"> Peng-Yuan Kao, <b>Kuan-Wei Tseng</b>, Tian-Yi Shen, Yan-Bin Song, <a href="http://covis.cs.nctu.edu.tw/advisor.php">Kuan-Wen Chen</a>, Shih-Wei Hu, Sheng-Wen Shih, and <a href="https://www.csie.ntu.edu.tw/~hung/index.html#about">Yi-Ping Hung</a></p>
+            <p class="publication-meta"><i>Pattern Recognition. ICPR International Workshops and Challenges, 2021.</i></p>
+            <div class="resource-links">
+              <a href="documents/kao2021camera.pdf" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Paper</a>
+              <a href="https://link.springer.com/chapter/10.1007/978-3-030-68796-0_21" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Publication</a>
+              <a href="https://youtu.be/hkse_ES144c" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  Video</a>
+            </div>
+          </div>
+        </article>
       </div>
-      <!-- Oxford -->
-      <div class="entry education">
-        <div class="title">
-          <h3 class="w3-hide-small">Summer 2017</h3>
-          <p class="w3-hide-small">Exchange Student</p>
-        </div>
-        <div class="body edubody">
-          <h5 style="font-weight: 700;">University of Oxford</h5>
-          <p style="margin-top: 10px;">Advanced Humanity and English Language Programme</p>
-          <p class="w3-hide-medium w3-hide-large">Summer 2017</p>
-          <button class="button7 collapsible">See More +</button>
-          <div class="detail">
-            <ul>
-              <li>Study abroad as an Exchange Student from National Taiwan University.</li>
-              <li>Comprehensive academic English program covering topics such as academic and creative writing, debating, British culture, job seeking skills, etc.</li>
-            </ul>
+    </section>
+    <section id="projects" class="section">
+      <h2 class="section-heading">PREPRINTS</h2>
+      <div class="container publication-list">
+        <article class="publication">
+          <figure class="publication-media">
+            <video controls playsinline preload="none" width="480" height="480" poster="images/optimized/GCVD-poster.webp" aria-label="Globally Consistent Video Depth and Pose Estimation with Efficient Test-Time Training preview">
+              <source src="images/optimized/GCVD.mp4" type="video/mp4">
+            </video>
+          </figure>
+          <div class="publication-copy">
+            <h3>Globally Consistent Video Depth and Pose Estimation with Efficient Test-Time Training</h3>
+            <p class="publication-description" id="GCVD-description">Dense depth and pose estimation is a vital prerequisite for various video applications. We present GCVD, a globally consistent method for learning-based video structure from motion (SfM) in this paper. It improves the robustness of learning-based methods with flow-guided keyframes and well-established depth prior. </p>
+            <div class="resource-links">
+              <a href="https://arxiv.org/abs/2208.02709" class="button button-resource"><span aria-hidden="true" class="link-icon">↗</span>  arXiv</a>
+            </div>
           </div>
-        </div>
-      </div>        
-    </div>
-  </div>
-</div>
-
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container smallscreen" id="publication">
-  <h1 class="w3-center" style="padding-bottom: 16px;"><b>PUBLICATIONS</b></h1>
-
-  <div class="w3-content" style="display: flex; padding-bottom: 32px;">
-    <div class="w3-center" style="flex:1; white-space: nowrap;">
-      <span style="display: inline-block; height: 100%; vertical-align: middle;"></span>
-      <img src="images/viobjtrack.gif" style="width:65%;" class="w3-square" alt="Alps">
-    </div>    
-    <div style="flex: 3">
-      <h5><b>Real-Time Object Pose Tracking System with Low Computational Cost for Mobile Devices</b></h5>
-      <h6 style="line-height:1.35;"> Yo-Chung Lau, <b>Kuan-Wei Tseng</b>, Peng-Yuan Kao, I-Ju Hsieh, Hsiao-Ching Tseng, and <a href="https://www.csie.ntu.edu.tw/~hung/index.html#about">Yi-Ping Hung</a></h6>
-      <h6 style="line-height:1.35;"><i>IEEE Journal of Indoor and Seamless Positioning and Navigation, 2023.</i></h6>
-      <a href="https://arxiv.org/abs/2210.12476"><button class="button8"><i class="fa fa-file-pdf-o fa-fw" style="padding-top:6px;"></i>&ensp; arXiv</button></a>      
-      <a href="https://doi.org/10.1109/JISPIN.2023.3340987"><button class="button8"><i class="fa fa-external-link fa-fw" style="padding-top:6px;"></i>&ensp; Publication</button></a>      
-      <a href="https://imlabntu.github.io/LCCObjectPose/"><button class="button8"><i class="fa fa-external-link fa-fw" style="padding-top:6px;"></i>&ensp; Project Page</button></a>      
-      <a href="https://youtu.be/ZwpuZo8gX3s"><button class="button8"><i class="fa fa-youtube-play fa-fw" style="padding-top:6px;"></i>&ensp; Video</button></a>
-    </div>
-  </div>
-
-  <div class="w3-content" style="display: flex; padding-bottom: 32px;">
-    <div class="w3-center" style="flex:1; white-space: nowrap;">
-      <span style="display: inline-block; height: 100%; vertical-align: middle;"></span>
-      <img src="images/viuwb.png" style="width:65%;" class="w3-square" alt="Alps">
-    </div>    
-    <div style="flex: 3">
-      <h5><b>VIUNet: Deep Visual–Inertial–UWB Fusion for Indoor UAV Localization</b></h5>
-      <h6 style="line-height:1.35;"> Peng-Yuan Kao, Hsui-Jui Chang, <b>Kuan-Wei Tseng</b>, <a href="https://timothychen1999.github.io/website/">Timothy Chen</a>, He-Lin Luo, <a href="https://www.csie.ntu.edu.tw/~hung/index.html#about">Yi-Ping Hung</a> </h6>
-      <h6 style="line-height:1.35;"><i>IEEE ACCESS 2023</i></h6>
-      <a href="https://ieeexplore.ieee.org/document/10131904/"><button class="button8"><i class="fa fa-file-pdf-o fa-fw" style="padding-top:6px;"></i>&ensp; Paper</button></a>
-      <a href="https://ieeexplore.ieee.org/document/10131904/"><button class="button8"><i class="fa fa-external-link fa-fw" style="padding-top:6px;"></i>&ensp; Publication</button></a>    
-      <a href="https://imlabntu.github.io/VIUNet/"><button class="button8"><i class="fa fa-external-link fa-fw" style="padding-top:6px;"></i>&ensp; Project Page</button></a>  
-    </div>
-  </div>
-
-
-  <div class="w3-content" style="display: flex; padding-bottom: 32px;">
-    <div class="w3-center" style="flex:1; white-space: nowrap;">
-      <span style="display: inline-block; height: 100%; vertical-align: middle;"></span>
-      <img src="images/3dvr.png" style="width:65%;" class="w3-square" alt="Alps">
-    </div>    
-    <div style="flex: 3">
-      <h5><b>Pseudo-3D Scene Modeling for Virtual Reality Using Stylized Novel View Synthesis</b></h5>
-      <h6 style="line-height:1.35;"> <b>Kuan-Wei Tseng</b>, <a href="https://www.jing-yuan.info">Jing-Yuan Huang</a>, <a href="https://balalachen.github.io">Yang-Sheng Chen</a>, <a href="https://imp.iis.sinica.edu.tw">Chu-Song Chen</a>, <a href="https://www.csie.ntu.edu.tw/~hung/index.html#about">Yi-Ping Hung</a> </h6>
-      <h6 style="line-height:1.35;"><i>ACM SIGGRAPH 2022 Posters</i></h6>
-      <a href="documents/tseng20223dvr.pdf"><button class="button8"><i class="fa fa-file-pdf-o fa-fw" style="padding-top:6px;"></i>&ensp; Paper</button></a>
-      <a href="https://dl.acm.org/doi/abs/10.1145/3532719.3543232"><button class="button8"><i class="fa fa-external-link fa-fw" style="padding-top:6px;"></i>&ensp; Publication</button></a>
-      <a href="https://youtu.be/ymQFY6ihP1Q"><button class="button8"><i class="fa fa-youtube-play fa-fw" style="padding-top:6px;"></i>&ensp; Video</button></a>      
-      <a href="ArtNV.html"><button class="button8"><i class="fa fa-external-link fa-fw" style="padding-top:6px;"></i>&ensp; Project Page</button></a>  
-    </div>
-  </div>
-
-  <div class="w3-content" style="display: flex; padding-bottom: 32px;">
-    <div class="w3-center" style="flex:1; white-space: nowrap;">
-      <span style="display: inline-block; height: 100%; vertical-align: middle;"></span>
-      <img src="images/artnv.gif" style="width:65%;" class="w3-square" alt="Alps">
-    </div>    
-    <div style="flex: 3">
-      <h5><b>Artistic Style Novel View Synthesis Based on A Single Image</b></h5>
-      <h6 style="line-height:1.35;"> <b>Kuan-Wei Tseng</b>, <a href="https://yaochih.github.io">Yao-Chih Lee</a>, <a href="https://imp.iis.sinica.edu.tw">Chu-Song Chen</a></h6>
-      <h6 style="line-height:1.35;"><i>IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, 2022.</i></h6>
-      <a href="https://openaccess.thecvf.com/content/CVPR2022W/CVFAD/papers/Tseng_Artistic_Style_Novel_View_Synthesis_Based_on_a_Single_Image_CVPRW_2022_paper.pdf"><button class="button8"><i class="fa fa-file-pdf-o fa-fw" style="padding-top:6px;"></i>&ensp; Paper</button></a>
-      <a href="https://openaccess.thecvf.com/content/CVPR2022W/CVFAD/html/Tseng_Artistic_Style_Novel_View_Synthesis_Based_on_a_Single_Image_CVPRW_2022_paper.html"><button class="button8"><i class="fa fa-external-link fa-fw" style="padding-top:6px;"></i>&ensp; Open Access</button></a>
-      <a href="https://youtu.be/aJDJdiGPbk4"><button class="button8"><i class="fa fa-youtube-play fa-fw" style="padding-top:6px;"></i>&ensp; Video</button></a>    
-      <a href="ArtNV.html"><button class="button8"><i class="fa fa-external-link fa-fw" style="padding-top:6px;"></i>&ensp; Project Page</button></a>   
-    </div>
-
-  </div>
-
-  <div class="w3-content" style="display: flex; padding-bottom: 32px;">
-    <div class="w3-center" style="flex:1; white-space: nowrap;">
-      <span style="display: inline-block; height: 100%; vertical-align: middle;"></span>
-      <img src="images/Deep3D.gif" style="width:65%;" class="w3-square" alt="Alps">
-    </div>    
-    <div style="flex: 3">
-      <h5><b>3D Video Stabilization with Depth Estimation by CNN-based Optimization</b></h5>
-      <h6 style="line-height:1.35;"> <a href="https://yaochih.github.io">Yao-Chih Lee</a>, <b>Kuan-Wei Tseng</b>, Yu-Ta Chen, Chien-Cheng Chen, <a href="https://imp.iis.sinica.edu.tw">Chu-Song Chen</a>, <a href="https://www.csie.ntu.edu.tw/~hung/index.html#about">Yi-Ping Hung</a></h6>
-      <h6 style="line-height:1.35;"><i>IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2021.</i></h6>
-      <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Lee_3D_Video_Stabilization_With_Depth_Estimation_by_CNN-Based_Optimization_CVPR_2021_paper.pdf"><button class="button8"><i class="fa fa-file-pdf-o fa-fw" style="padding-top:6px;"></i>&ensp; Paper</button></a>
-      <a href="https://openaccess.thecvf.com/content/CVPR2021/html/Lee_3D_Video_Stabilization_With_Depth_Estimation_by_CNN-Based_Optimization_CVPR_2021_paper.html"><button class="button8"><i class="fa fa-external-link fa-fw" style="padding-top:6px;"></i>&ensp; Open Access</button></a>
-      <a href="https://www.youtube.com/watch?v=pMluFVA7NDQ"><button class="button8"><i class="fa fa-youtube-play fa-fw" style="padding-top:6px;"></i>&ensp; Video</button></a>
-      <a href="https://yaochih.github.io/deep3d-stabilizer.io/"><button class="button8"><i class="fa fa-external-link fa-fw" style="padding-top:6px;"></i>&ensp; Project Page</button></a>    
-    </div>
-
-  </div>
-
-  <div class="w3-content" style="display: flex; padding-bottom: 32px;">
-    <div class="w3-center" style="flex:1; white-space: nowrap;">
-      <span style="display: inline-block; height: 100%; vertical-align: middle;"></span>
-      <img src="images/vrsmell.jpg" style="width:65%;" class="w3-square" alt="Alps">
-    </div>    
-    <div style="flex: 3">
-      <h5><b>aBio: Active Bi-Olfactory Display Using Subwoofers for Virtual Reality</b></h5>
-      <h6 style="line-height:1.35;"> <a href="http://www.youyang-hu.com">You-Yang Hu</a>, Yao-Fu Jan, <b>Kuan-Wei Tseng</b>, <a href="https://www.linkedin.com/in/youshin/">You-Shin Tsai</a>, Hung-Ming Sung, Jin-Yao Lin, <a href="https://www.csie.ntu.edu.tw/~hung/index.html#about">Yi-Ping Hung</a></h6>
-      <h6 style="line-height:1.35;"><i>ACM International Conference on Multimedia (ACMMM), 2021.</i> <br><span style="font-weight:600;color:red;">ORAL PAPER, BEST STUDENT PAPER</span></h6>
-      <a href="documents/hu2021aBio.pdf"><button class="button8"><i class="fa fa-file-pdf-o fa-fw" style="padding-top:6px;"></i>&ensp; Paper</button></a>
-      <a href="https://dl.acm.org/doi/10.1145/3474085.3475678"><button class="button8"><i class="fa fa-external-link fa-fw" style="padding-top:6px;"></i>&ensp; Publication</button></a>
-      <a href="https://www.youtube.com/watch?v=R53b0H5C-IM"><button class="button8"><i class="fa fa-youtube-play fa-fw" style="padding-top:6px;"></i>&ensp; Video</button></a>   
-    </div>
-  </div>
-
-  <div class="w3-content" style="display: flex; padding-bottom: 32px;">
-    <div class="w3-center" style="flex:1; white-space: nowrap;">
-      <span style="display: inline-block; height: 100%; vertical-align: middle;"></span>
-      <img src="images/pixstab.jpg" style="width:65%;" class="w3-square" alt="Alps">
-    </div>    
-    <div style="flex: 3">
-      <h5><b>PixStabNet: Fast Multi-Scale Deep Online Video Stabilization with Pixel-Based Warping</b></h5>
-      <h6 style="line-height:1.35;"> Yu-Ta Chen, <b>Kuan-Wei Tseng</b>, <a href="https://yaochih.github.io">Yao-Chih Lee</a>, Chun-Yu Chen, <a href="https://www.csie.ntu.edu.tw/~hung/index.html#about">Yi-Ping Hung</a> </h6>
-      <h6 style="line-height:1.35;"><i>IEEE International Conference on Image Processing (ICIP), 2021.</i></h6>
-      <a href="documents/chen2021pix.pdf"><button class="button8"><i class="fa fa-file-pdf-o fa-fw" style="padding-top:6px;"></i>&ensp; Paper</button></a>
-      <a href="https://ieeexplore.ieee.org/abstract/document/9506801"><button class="button8"><i class="fa fa-external-link fa-fw" style="padding-top:6px;"></i>&ensp; Publication</button></a>      
-      <button class="button8"><i class="fa fa-youtube-play fa-fw" style="padding-top:6px;"></i>&ensp; Video</button></a>
-    </div>
-  </div>
-
-  <div class="w3-content" style="display: flex; padding-bottom: 32px;">
-    <div class="w3-center" style="flex:1; white-space: nowrap;">
-      <span style="display: inline-block; height: 100%; vertical-align: middle;"></span>
-      <img src="images/TaiChi.jpg" style="width:65%;" class="w3-square" alt="Alps">
-    </div>    
-    <div style="flex: 3">
-      <h5 style="margin-top: 0;"><b>Augmented Tai-Chi Chuan Practice Tool with Pose Evaluation</b></h5>
-      <h6 style="line-height:1.35;"> Yao-Fu Jan, <b>Kuan-Wei Tseng</b>, Peng-Yuan Kao, <a href="https://www.csie.ntu.edu.tw/~hung/index.html#about">Yi-Ping Hung</a></h6>
-      <h6 style="line-height:1.35;"><i>IEEE International Conference on Multimedia Information Processing and Retrieval (MIPR), 2021.</i><br><span style="font-weight:600;color:red;">ORAL PAPER</span></h6>
-      <a href="documents/jan2021TaiChi.pdf"><button class="button8"><i class="fa fa-file-pdf-o fa-fw" style="padding-top:6px;"></i>&ensp; Paper</button></a>
-      <a href="https://ieeexplore.ieee.org/document/9565549"><button class="button8"><i class="fa fa-external-link fa-fw" style="padding-top:6px;"></i>&ensp; Publication</button></a>
-      <button class="button8"><i class="fa fa-youtube-play fa-fw" style="padding-top:6px;"></i>&ensp; Video</button></a>
-    </div>
-  </div> 
-
-  <div class="w3-content" style="display: flex; padding-bottom: 32px;">
-    <div class="w3-center" style="flex:1; white-space: nowrap;">
-      <span style="display: inline-block; height: 100%; vertical-align: middle;"></span>
-      <img src="images/complementary.png" style="width:65%;" class="w3-square" alt="Alps">
-    </div>    
-    <div style="flex: 3">
-      <h5 style="margin-top: 0"><b>Camera Ego-Positioning Using Sensor Fusion and Complementary Method</b></h5>
-      <h6 style="line-height:1.35;"> Peng-Yuan Kao, <b>Kuan-Wei Tseng</b>, Tian-Yi Shen, Yan-Bin Song, <a href="http://covis.cs.nctu.edu.tw/advisor.php">Kuan-Wen Chen</a>, Shih-Wei Hu, Sheng-Wen Shih, and <a href="https://www.csie.ntu.edu.tw/~hung/index.html#about">Yi-Ping Hung</a></h6>
-      <h6 style="line-height:1.35;"><i>Pattern Recognition. ICPR International Workshops and Challenges, 2021.</i></h6>
-      <a href="documents/kao2021camera.pdf"><button class="button8"><i class="fa fa-file-pdf-o fa-fw" style="padding-top:6px;"></i>&ensp; Paper</button></a>
-      <a href="https://link.springer.com/chapter/10.1007/978-3-030-68796-0_21"><button class="button8"><i class="fa fa-external-link fa-fw" style="padding-top:6px;"></i>&ensp; Publication</button></a>
-      <a href="https://youtu.be/hkse_ES144c"><button class="button8"><i class="fa fa-youtube-play fa-fw" style="padding-top:6px;"></i>&ensp; Video</button></a>
-    </div>
-  </div>
-</div>
-
-<div class="w3-row-padding w3-padding-64 w3-container smallscreen" id="projects">
-  <h1 class="w3-center" style="padding-bottom: 16px;"><b>PREPRINTS</b></h1>
-  <div class="w3-content" style="display: flex; padding-bottom: 32px;">
-    <div class="w3-center" style="flex:1; white-space: nowrap;">
-      <span style="display: inline-block; height: 100%; vertical-align: middle;"></span>
-      <img src="images/GCVD.gif" style="width:65%;" class="w3-square" alt="Alps">
-    </div>    
-    <div style="flex: 3">
-      <h5>Globally Consistent Video Depth and Pose Estimation with Efficient Test-Time Training</h5>
-      <p style="text-align: justify;">Dense depth and pose estimation is a vital prerequisite for various video applications. We present GCVD, a globally consistent method for learning-based video structure from motion (SfM) in this paper. It improves the robustness of learning-based methods with flow-guided keyframes and well-established depth prior. </p> 
-      <a href="https://arxiv.org/abs/2208.02709"><button class="button8"><i class="fa fa-file-pdf-o fa-fw" style="padding-top:6px;"></i>&ensp; arXiv</button></a>  
-    </div>
-  </div>  
-
-</div>
-
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge"><i>Labor omnia vincit (Hard work conquers all. - Virgil)</i></h1>
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
-  <div class="w3-xlarge w3-padding-32">
-    <a href="https://www.facebook.com/kuanweiwayne"><i class="fa fa-facebook-official w3-xxlarge w3-hover-opacity"></i></a> &nbsp
-    <a href="https://www.linkedin.com/in/kuan-wei-tseng-a18749224/"><i class="fa fa-linkedin w3-xxlarge w3-hover-opacity"></i></a> &nbsp
-    <a href="https://github.com/Kuan-Wei-Tseng"><i class="fa fa-github w3-xxlarge w3-hover-opacity"></i></a>
- </div>
-</footer>
-
-<script>
-
-  // Used to toggle the menu on small screens when clicking on the menu button
-  function Hamburger() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-      x.className += " w3-show";
-    } else { 
-      x.className = x.className.replace(" w3-show", "");
-    }
-  }
-  
-  // When the user clicks anywhere outside of the modal, close it
-  var modal = document.getElementById('ticketModal');
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
-
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
-
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", 
-    function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      var button  = this.firstChild;
-      if (content.style.display === "block") {
-        content.style.display = "none";
-        button.data = "See More +"
-      } else {
-        content.style.display = "block";
-        button.data = "See Less −"
-      }
-    });
-  }
-  </script>
-
+        </article>
+      </div>
+    </section>
+    <aside class="motto"><p><i><span lang="la">Labor omnia vincit</span> (Hard work conquers all. - Virgil)</i></p></aside>
+  </main>
+  <footer class="site-footer">
+    <!-- html-validate-disable-next no-redundant-role -- Preserve list semantics in Safari when CSS removes markers. -->
+    <ul class="social-links" role="list" aria-label="Social profiles">
+      <li><a href="https://www.facebook.com/kuanweiwayne">Facebook</a></li>
+      <li><a href="https://www.linkedin.com/in/kuan-wei-tseng-a18749224/">LinkedIn</a></li>
+      <li><a href="https://github.com/Kuan-Wei-Tseng">GitHub</a></li>
+    </ul>
+  </footer>
 </body>
 </html>
-
