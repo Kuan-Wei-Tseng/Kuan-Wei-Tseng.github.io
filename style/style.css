@@ -143,9 +143,8 @@ img, video { display: block; max-inline-size: 100%; block-size: auto; }
 .hero-media img { inline-size: 100%; block-size: 100%; object-fit: cover; object-position: center top; }
 .profile-hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, #08131dc4, #08131d40); }
 .hero-content h1 { max-inline-size: 16ch; font-size: clamp(2rem, 1.35rem + 3vw, 4.5rem); letter-spacing: .025em; }
-.hero-role { font-size: clamp(1.1rem, 1rem + .5vw, 1.5rem); margin-block: .9rem 1.7rem; }
+.hero-role { font-size: clamp(1.1rem, 1rem + .5vw, 1.5rem); margin-block: .9rem 0; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: .4rem; min-block-size: 2.75rem; padding: .55rem .9rem; border: 1px solid var(--line); border-radius: .4rem; text-decoration: none; font-weight: 600; line-height: 1.4; }
-.button-primary { background: #fff; color: #162b3c; border-color: #fff; padding: .75rem 1.2rem; }
 .button:hover { background: #eaf0f5; color: #183f5d; text-decoration: none; }
 .profile-hero :focus-visible { outline-color: #fff; }
 
@@ -214,7 +213,7 @@ img, video { display: block; max-inline-size: 100%; block-size: auto; }
 .entry-details p { margin-block: .75rem; }
 
 .publication-list { display: grid; gap: 2.5rem; }
-.publication { display: grid; grid-template-columns: minmax(0, 16rem) minmax(0, 1fr); gap: 2rem; padding-block-end: 2.5rem; border-block-end: 1px solid var(--line); align-items: start; }
+.publication { display: grid; grid-template-columns: minmax(0, 12rem) minmax(0, 1fr); gap: 2rem; padding-block-end: 2.5rem; border-block-end: 1px solid var(--line); align-items: start; }
 .publication:last-child { border: 0; padding-block-end: 0; }
 .publication-copy { min-inline-size: 0; overflow-wrap: anywhere; }
 .publication-meta, .publication-description { margin-block-start: .65rem; }
@@ -256,7 +255,7 @@ img, video { display: block; max-inline-size: 100%; block-size: auto; }
   .about-avatar img { inline-size: 10rem; }
   .about-copy { margin-inline: auto; }
   .timeline { --date-width: 10rem; --marker-track: 2.5rem; }
-  .publication { grid-template-columns: minmax(0, 12rem) minmax(0, 1fr); gap: 1.5rem; }
+  .publication { grid-template-columns: minmax(0, 10rem) minmax(0, 1fr); gap: 1.5rem; }
 }
 @media (max-width: 40rem) {
   .container, .page { inline-size: calc(100% - 2rem); }
@@ -271,7 +270,7 @@ img, video { display: block; max-inline-size: 100%; block-size: auto; }
   .entry-body { grid-column: 2; grid-row: 2; }
   .entry::after { grid-column: 1; }
   .publication { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; }
-  .publication-media { inline-size: min(100%, 22rem); margin-inline: auto; }
+  .publication-media { inline-size: min(100%, 14rem); margin-inline: auto; }
   .links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .page { padding-block-start: 1rem; }
 }
